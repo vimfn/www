@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 /* font */
 @layer base {
   body {
@@ -42,6 +42,23 @@
   --color-hightlight-high: 82 79 103;
 }
 
+.theme-second {
+  --color-base: 250 244 237;
+  --color-surface: 255 250 243;
+  --color-overlay: 242 233 222;
+  --color-muted: 152 147 165;
+  --color-subtle: 121 117 147;
+  --color-text: 87 82 121;
+  --color-love: 180 99 122;
+  --color-gold: 234 157 52;
+  --color-rose: 215 130 126;
+  --color-pine: 40 105 131;
+  --color-foam: 86 148 159;
+  --color-iris: 144 122 169;
+  --color-hightlight-low: 244 237 232;
+  --color-hightlight-med: 223 218 217;
+  --color-hightlight-high: 206 202 205;
+}
 
 
 html,

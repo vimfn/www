@@ -4,11 +4,6 @@ import classNames from "classnames";
 import { allPosts, allSnippets, Post, Snippet } from "contentlayer/generated";
 import { pick } from "contentlayer/utils";
 import SnippetCard from "src/components/SnippetCard";
-import useSWR from "swr";
-import fetcher from "src/lib/fetcher";
-import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
-import { useAudio } from "react-use";
 import TopTrackSpotify from "src/components/TopTrackSpotify";
 
 export default function Home({
