@@ -1,4 +1,4 @@
-### My Websie Site using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Vercel](https://vercel.com/).
+### My Website made using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Vercel](https://vercel.com/).
 
 
 # Screenshots 📸
