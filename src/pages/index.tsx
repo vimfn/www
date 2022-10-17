@@ -35,7 +35,7 @@ export default function Home({
         </h2>
       </div>
       <p className="px-5 py-3 border-l-8 border-sky-400 text-gl bg-surface">
-        View the site source code on <b><a href="https://github.com/its-ag/arunava.tech" target="_blank" rel="noreferrer">GitHub</a> (Give it a star 🌟) </b>
+        View the site source code on <b><a href="https://github.com/its-ag/arunava.tech" target="_blank" rel="noreferrer">GitHub</a> </b> (Give a star ⭐ to show your support :P)
       </p>
       <NewestPost posts={posts} />
       <FeaturedSnippet snippets={snippets} />
