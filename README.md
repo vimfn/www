@@ -33,6 +33,6 @@ npm run dev
 ## Cloning / Forking 😇
 
 - Give this repository a star ⭐
-- Please review the [license](https://github.com/its-ag/arunava.tech/blob/main/license.txt) and remove all of my personal information (blog posts, images, etc.).
+- Please review the [license](https://github.com/its-ag/arunava.tech/blob/main/LICENSE) and remove all of my personal information (blog posts, images, etc.).
 
-### This site is inspired by [leereb.io](https://leereb.io/). 🫂
+### This site is inspired by [leerob.io](https://leerob.io/). 🫂
