@@ -5,6 +5,8 @@ import { allPosts, allSnippets, Post, Snippet } from "contentlayer/generated";
 import { pick } from "contentlayer/utils";
 import SnippetCard from "src/components/SnippetCard";
 import TopTrackSpotify from "src/components/TopTrackSpotify";
+import Subscribe from "src/components/Subscribe";
+
 
 export default function Home({
   posts,
@@ -40,6 +42,7 @@ export default function Home({
       <NewestPost posts={posts} />
       <FeaturedSnippet snippets={snippets} />
       <TopTrackSpotify />
+      <Subscribe />
     </div>
   );
 }
