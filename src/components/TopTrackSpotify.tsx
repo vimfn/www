@@ -25,7 +25,7 @@ export default function TopTrackSpotify() {
       <div className="mb-6 ">
         <h3 className="text-2xl font-bold">Top tracks this month</h3>
         <p className="text-lg text-subtle">
-          I love listening to music, Click to the number to listen to the preview 🎧
+          I love listening to music, Click to the number to listen to the preview 🎼
         </p>
       </div>
       <div className="space-y-3">
