@@ -49,7 +49,7 @@ const Subscribe = () => {
             type="email"
             autoComplete="email"
             required
-            className="px-4 py-2 mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full text-black bg-base dark:text-black border-foam rounded-md pr-32"
+            className="px-4 py-2 mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full bg-base border-foam rounded-md pr-32"
           />
           <button
             className="flex items-center justify-center absolute right-1 top-1 px-4 pt-1 font-medium h-8 bg-pine dark:text-white rounded w-28"
