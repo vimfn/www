@@ -39,7 +39,7 @@ const Subscribe = () => {
           Subscribe to My Newsletter
         </p>
         <p className="my-1">
-        Get emails from me about web development, tech, and early access to new articles.
+        Get emails from me about web development, tech, and early access to new articles. 🌟 Also get invited to join our <b> members only discord community.</b>
         </p>
         <form className="relative my-4" onSubmit={subscribeMe}>
           <input
