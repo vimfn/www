@@ -26,14 +26,14 @@ export default function Home({
           <span className="ml-4 text-xl text-subtle">
             aka{" "}
             <span className="text-rose hover-underline-animation">
-              &quot;AG&quot;
+              <a href="http://hi.arunava.tech" target="_blank" rel="noopener noreferrer">`AG`</a> 
             </span>
-           <span> </span> on internet 🌐
+           <span> </span> on internet.
           </span>
         </h1>
         <h2 className="mt-3 md:text-lg text-subtle">
-          Just a guy that likes to code.. <br />
-          <b> Student, Web Developer, and Linux Enthusiast. </b>
+          <span> Just a guy that likes to code.. </span> <br />
+          <b> I'm a 17 y/o self-taught developer,  <a className="text-gold hover-underline-animation" href="https://hi.arunava.tech" target="_blank" rel="noopener noreferrer"> reach out to me 📧. </a>  </b> 
         </h2>
       </div>
       <p className="px-5 py-3 border-l-8 border-gold text-gl bg-surface">
