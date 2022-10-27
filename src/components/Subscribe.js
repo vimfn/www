@@ -45,7 +45,7 @@ const Subscribe = () => {
           <input
             onChange={changeEmail}
             aria-label="Email for newsletter"
-            placeholder="email@ag.com"
+            placeholder="Your email address"
             type="email"
             autoComplete="email"
             required
