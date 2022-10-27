@@ -36,9 +36,9 @@ export default function Home({
           <b> Student, Web Developer, and Linux Enthusiast. </b>
         </h2>
       </div>
-      <p className="px-5 py-3 border-l-8 border-sky-400 text-gl bg-overlay">
+      {/* <p className="px-5 py-3 border-l-8 border-sky-400 text-gl bg-overlay">
        You can find my more recent posts <b><a className="hover-underline-animation" href="https://blog.arunava.tech/" target="_blank" rel="noreferrer"> here 📡</a> </b> and all of my Links <b> <a className="hover-underline-animation" href="http://hi.arunava.tech" target="_blank" rel="noopener noreferrer"> here.</a> </b>
-      </p>
+      </p> */}
       <NewestPost posts={posts} />
       <FeaturedSnippet snippets={snippets} />
       <TopTrackSpotify />
