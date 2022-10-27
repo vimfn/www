@@ -72,7 +72,7 @@ export default function PostLayout({
         </div>
       </article>
       <div className="mt-10">
-        {/* <Comment /> */}
+        <Comment />
         < Subscribe />
       </div>
     </div>
