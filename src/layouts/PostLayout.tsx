@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Comment from "src/components/Comment";
 import ScrollTopAndComment from "src/components/ScrollTopAndComment";
 import Tag from "src/components/Tag";
+import Subscribe from "src/components/Subscribe";
 
 export default function PostLayout({
   children,
@@ -72,6 +73,7 @@ export default function PostLayout({
       </article>
       <div className="mt-10">
         <Comment />
+        < Subscribe />
       </div>
     </div>
   );
