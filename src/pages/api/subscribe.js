@@ -34,7 +34,7 @@ export default async function handler(req, res) {
 
         // Send a JSON response
         res.status(201).json({
-            message: `Hey, ${email}, Please check your email and verify it. Can't wait to get you boarded.`,
+            message: `Hooray ${email} ! You're now on the list.`,
             error: ''
         });
     } catch (err) {
