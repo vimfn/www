@@ -33,7 +33,7 @@ export default function Home({
         </h1>
         <h2 className="mt-3 md:text-lg text-subtle">
           <span> Just a guy that likes to code.. </span> <br />
-          <b> I'm a 17 y/o self-taught developer,  <a className="text-gold hover-underline-animation" href="mailto:itsag0024@gmail.com" target="_blank" rel="noopener noreferrer"> reach out to me 📧. </a>  </b> 
+          <b> I am a 17 y/o self-taught developer,  <a className="text-gold hover-underline-animation" href="mailto:itsag0024@gmail.com" target="_blank" rel="noopener noreferrer"> reach out to me 📧. </a>  </b> 
         </h2>
       </div>
       <p className="px-5 py-3 border-l-8 border-gold text-gl bg-surface">
@@ -108,7 +108,7 @@ function FeaturedSnippet({ snippets }: { snippets: Snippet[] }) {
           <SnippetCard key={snippet.slug} {...snippet} />
         ))}
       </div>
-      <Link href="/blog">
+      <Link href="/snippet">
         <a className="flex items-center mt-5 transition-all hover:text-text text-subtle">
           View all snippets
           <svg
@@ -141,6 +141,6 @@ export async function getStaticProps() {
       pick(snippet, ["description", "title", "logos", "slug", "date"])
     )
     .sort((a, b) => moment(b.date).diff(moment(a.date)))
-    .slice(0, 4);
+    .slice(0, 2);
   return { props: { posts, snippets } };
 }
