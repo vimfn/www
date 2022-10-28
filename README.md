@@ -3,7 +3,7 @@
 
 # Screenshots 📸
 
-[ag_desktop.webm](https://user-images.githubusercontent.com/102473837/196107499-6928ad56-5fc7-47f4-b4e8-514547ea4fcf.webm)
+![image](https://user-images.githubusercontent.com/102473837/198606011-be375326-2cd7-4c1b-a74d-19ca35cce11e.png)
 
 ## 🚀 Live at - https://arunava.tech
 
@@ -35,4 +35,4 @@ npm run dev
 - Give this repository a star ⭐
 - Please review the [license](https://github.com/its-ag/arunava.tech/blob/main/LICENSE) and remove all of my personal information (blog posts, images, etc.).
 
-### This site is inspired by [leerob.io](https://leerob.io/). 🫂
+This site is inspired by [leerob.io](https://leerob.io/).
