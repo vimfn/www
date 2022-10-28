@@ -8,7 +8,7 @@ const siteMetadata = {
     gender: "male",
   },
   headerTitle: "Arunava Ghosh",
-  description: "A place to put my thoughts in writing",
+  description: "A place for my ramblings",
   siteUrl: "https://arunava.tech",
   siteRepo: "https://github.com/",
   siteLogo: "/static/images/logo.png",
