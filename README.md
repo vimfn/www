@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-## Cloning / Forking 😇
+## Cloning / Forking
 
 - Give this repository a star ⭐
 - Please review the [license](https://github.com/its-ag/arunava.tech/blob/main/LICENSE) and remove all of my personal information (blog posts, images, etc.).
