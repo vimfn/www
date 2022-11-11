@@ -1,26 +1,38 @@
-### My Website made using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Vercel](https://vercel.com/).
+# My 🏠 on the ☁️
 
+My personal site on the cloud for my ramblings.
 
-# Screenshots 📸
+It would be highly appreciated if I could read your comment on what I wrote.
+
 
 ![image](https://user-images.githubusercontent.com/102473837/198606011-be375326-2cd7-4c1b-a74d-19ca35cce11e.png)
 
 ## 🚀 Live at - https://arunava.tech
 
-# Features 🌟
 
-- [x] Next.js
-- [x] Tailwind CSS
-- [x] Vercel
-- [x] Dark Mode
-- [x] SEO
-- [x] Google Analytics
-- [x] RSS Feed
-- [x] Sitemap
-- [x] Favicon
-- [x] PWA
-- [x] Comments using [utterances](https://utteranc.es/)
+## Motivation
 
+> Sharing is learning!
+
+I believe noting down and sharing is the best way to learn! So I created this blog, where I keep things that I learned, find useful, and necessary to save for later.
+
+Beyond technical stuff, there are personal thoughts about work and life.
+
+## Stack
+
+This blog is hosted on [Vercel](https://vercel.com/), built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) using Tailwind [Nextjs Starter Blog](https://twitter.com/timlrxx), thanks to [leerob.io](https://leerob.io/) for the design inspiration.
+
+
+- Upgrading to React 18, latest version of `mdx-bundler`, all `rehype`/`remark` plugins and dependencies are up-to-date 📥
+- Adopting `typescript` 🎉
+
+_And yes! My Website have a legacy version which can be found [here](https://arunava.pages.dev/)_.
+
+## Assets
+
+The images in this blog are from [Unsplash](https://unsplash.com/), gifs from [GIPHY](https://giphy.com/), and illustrations are from [Storyset](https://storyset.com/).
+
+Thanks for the free resources 🙏
 
 ## To run locally 🚂
 This application requires Node.js v16.13+.
@@ -35,4 +47,4 @@ npm run dev
 - Give this repository a star ⭐
 - Please review the [license](https://github.com/its-ag/arunava.tech/blob/main/LICENSE) and remove all of my personal information (blog posts, images, etc.).
 
-This site is inspired by [leerob.io](https://leerob.io/).
+Copyright (c) 2023 Arunava Ghosh (AG) - Alrights reserved.
