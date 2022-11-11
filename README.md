@@ -20,11 +20,11 @@ It would be highly appreciated if I could read your comment on what I wrote.
 
 ## Stack
 
-This blog is hosted on [Vercel](https://vercel.com/), built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) using Tailwind [Nextjs Starter Blog](https://twitter.com/timlrxx), thanks to [leerob.io](https://leerob.io/) for the design inspiration.
+This blog is hosted on [Vercel](https://vercel.com/), built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/), thanks to [leerob.io](https://leerob.io/) for the design inspiration.
 
-
-- Upgrading to React 18, latest version of `mdx-bundler`, all `rehype`/`remark` plugins and dependencies are up-to-date 📥
 - Adopting `typescript` 🎉
+- Upgrading to React 18, latest version of `mdx-bundler`, all `rehype`/`remark` plugins and dependencies are up-to-date 📥
+
 
 _And yes! My Website have a legacy version which can be found [here](https://arunava.pages.dev/)_.
 
