@@ -2,8 +2,6 @@
 
 My personal site on the cloud for my ramblings.
 
-It would be highly appreciated if I could read your comment on what I wrote.
-
 
 ![image](https://user-images.githubusercontent.com/102473837/198606011-be375326-2cd7-4c1b-a74d-19ca35cce11e.png)
 
@@ -17,6 +15,8 @@ It would be highly appreciated if I could read your comment on what I wrote.
 I believe noting down and sharing is the best way to learn! So I created this blog, where I keep things that I learned, find useful, and necessary to save for later.
 
 Beyond technical stuff, there are personal thoughts about work and life.
+It would be highly appreciated if I could read your comment on what I wrote.
+
 
 ## Stack
 
