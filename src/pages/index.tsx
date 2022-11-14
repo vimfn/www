@@ -32,12 +32,12 @@ export default function Home({
           </span>
         </h1>
         <h2 className="mt-3 md:text-lg text-subtle">
-          <span> Just a guy that likes to code.. </span> <br />
-          <b> I&apos;m a 17 y/o self-taught developer,  <a className="text-gold hover-underline-animation" href="mailto:itsag0024@gmail.com" target="_blank" rel="noopener noreferrer"> reach out to me 📧. </a>  </b> 
+          {/* <span> Just a guy that likes to code.. </span> <br /> */}
+          <b> I&apos;m a 17 y/o self-taught developer who likes to code,  <a className="text-gold hover-underline-animation" href="mailto:itsag0024@gmail.com" target="_blank" rel="noopener noreferrer"> reach out to me. 📧 </a>  </b> 
         </h2>
       </div>
       <p className="px-5 py-3 border-l-8 border-gold text-gl bg-surface">
-      <b> 🧐 Looking for my projects.. </b><a className="hover-underline-animation" href="https://github.com/its-ag/" target="_blank" rel="noreferrer"> Well, <b> Github</b> is the place of all of my codes. </a> 
+      <b>🌺  Looking for my projects.. </b><a className="hover-underline-animation" href="https://github.com/its-ag/" target="_blank" rel="noreferrer"> Well, <b className="text-gold"> Github</b> is the place of all of my codes. </a> 
       </p>
       <NewestPost posts={posts} />
       <FeaturedSnippet snippets={snippets} />
