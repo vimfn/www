@@ -37,7 +37,7 @@ const Post = defineDocumentType(() => ({
       of: {
         type: "string",
       },
-      default: ["linh tinh"],
+      default: ["Uncategorized"],
       description: "Tags for the post",
       required: false,
     },
