@@ -37,7 +37,7 @@ export default function Home({
         </h2>
       </div>
       <p className="px-5 py-3 border-l-8 border-gold text-gl bg-surface">
-      <b>🌺  Looking for my projects.. </b><a className="hover-underline-animation" href="https://github.com/its-ag/" target="_blank" rel="noreferrer"> Well, <b className="text-gold"> Github</b> is the place of all of my codes. </a> 
+      <b>🥷🏻 Looking for my projects.. </b><a className="hover-underline-animation" href="https://github.com/its-ag/" target="_blank" rel="noreferrer"> Well, <b className="text-gold"> Github</b> is the place of all of my codes. </a> 
       </p>
       <NewestPost posts={posts} />
       <FeaturedSnippet snippets={snippets} />

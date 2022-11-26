@@ -40,6 +40,7 @@
   --color-hightlight-low: 33 32 46;
   --color-hightlight-med: 64 61 82;
   --color-hightlight-high: 82 79 103;
+  --background-image: url("./bg.svg");
 }
 
 .theme-second {
@@ -58,6 +59,7 @@
   --color-hightlight-low: 244 237 232;
   --color-hightlight-med: 223 218 217;
   --color-hightlight-high: 206 202 205;
+  --background-image: url("./bg.svg");
 }
 
 
