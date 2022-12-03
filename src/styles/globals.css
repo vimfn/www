@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
+
 /* font */
 @layer base {
   body {
@@ -22,12 +22,11 @@
       "Liberation Mono", "Courier New", monospace;
   }
 }
-
 /* we define color scheme here */
 .theme-first {
   --color-base: 26 27 27;
   --color-surface: 17 16 16;
-  --color-overlay: 38 35 58;
+  --color-overlay: 38 46 51;
   --color-muted: 110 106 134;
   --color-subtle: 144 140 170;
   --color-text: 224 222 244;
