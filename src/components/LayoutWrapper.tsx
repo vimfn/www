@@ -17,7 +17,7 @@ export default function LayoutWrapper({
   const router = useRouter();
 
   return (
-    <motion.div className="max-w-3xl min-h-screen px-5 mx-auto ">
+    <motion.div className="max-w-3xl min-h-screen px-5 mx-auto">
       <Header />
       <AnimatePresence initial={false} exitBeforeEnter>
         <motion.div
