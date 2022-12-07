@@ -227,3 +227,16 @@ body::-webkit-scrollbar-thumb {
   padding: 0 1rem;
   overflow: hidden;
 }
+
+/* .dancing-image {
+  animation: dancing 10s linear infinite;
+}
+
+@keyframes dancing {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */
