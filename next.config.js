@@ -9,8 +9,8 @@ const nextConfig = {
     scrollRestoration: true,
   },
   i18n: {
-    locales: ["vi"],
-    defaultLocale: "vi",
+    locales: ["en"],
+    defaultLocale: "en",
   },
 };
 
