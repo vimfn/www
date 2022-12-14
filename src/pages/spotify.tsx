@@ -9,7 +9,7 @@ function MyPage() {
     router.push('https://open.spotify.com/user/zfu9cur8fpnw6oc4q8vm55op6');
   }, []);
 
-  return <div className='nsfw'>Redirecting...</div>;
+  return <div className='nsfw'></div>;
 }
 
 export default MyPage;
