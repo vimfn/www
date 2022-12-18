@@ -3,8 +3,7 @@
 My personal site on the cloud for my ramblings.
 
 
-![image](https://user-images.githubusercontent.com/102473837/198606011-be375326-2cd7-4c1b-a74d-19ca35cce11e.png)
-
+![image](https://user-images.githubusercontent.com/102473837/208290375-5c0adb19-a84a-4968-8308-d765a7ee8c2a.png)
 ## 🚀 Live at - https://arunava.tech
 
 
