@@ -1,3 +1,4 @@
+// https://tailwindcss.com/docs/configuration
 function withOpacityValue(variable) {
   return ({ opacityValue }) => {
     if (opacityValue === undefined) {
