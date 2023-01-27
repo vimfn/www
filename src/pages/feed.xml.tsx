@@ -29,7 +29,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
   const feed = new Feed({
     title: siteMetadata.title,
-    description: siteMetadata.description,
+    description: " ©️ Website designed and developed by Arunava Ghosh",
     id: siteURL,
     link: siteURL,
     image: `${siteURL}/static/images/logo.png`,

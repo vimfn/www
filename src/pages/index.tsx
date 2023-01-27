@@ -42,7 +42,7 @@ export default function Home({
       <NewestPost posts={posts} />
       <FeaturedSnippet snippets={snippets} />
       <TopTrackSpotify />
-      <Subscribe />
+      {/* <Subscribe /> */}
     </div>
   );
 }

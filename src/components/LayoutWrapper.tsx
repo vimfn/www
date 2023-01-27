@@ -180,8 +180,16 @@ function Footer() {
       <NowPlaying />
       <div className="flex flex-col-reverse gap-3 md:flex-row  justify-between py-5 text-sm border-t-[1px] border-t-muted">
         <div>
-          © {new Date().getFullYear()} {siteMetadata.author} •{" "}
-          {siteMetadata.description}
+          <span>
+            {" "}
+            <a href="https://github.com/its-ag">
+              {" "}
+              ©️ Website designed and developed by{" "}
+              <b className="text-rose hover-underline-animation">
+               <a href="https://github.com/its-ag"></a> Arunava.
+              </b>{" "}
+            </a>{" "}
+          </span>
         </div>
         <div>
           <a target="_blank" href="/feed.xml" rel="noreferrer">

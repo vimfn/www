@@ -1,7 +1,7 @@
 import siteMetadata from "data/siteMetadata";
 import { NextSeoProps } from "next-seo";
 const seo: NextSeoProps = {
-  description: siteMetadata.description,
+  description: " ©️ Website designed and developed by Arunava Ghosh",
   defaultTitle: siteMetadata.title,
   titleTemplate: `%s - ${siteMetadata.title}`,
 
