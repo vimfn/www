@@ -61,9 +61,9 @@ const Subscribe = () => {
         {success 
           ? <span className="flex items-center text-sm font-bold text-green-700">{success}</span> 
           : <span className="flex items-center text-sm font-bold text-red-800">{error}</span>}
-        <p className="text-sm">
+        {/* <p className="text-sm">
           { subscriberCount } subscribers - {issues && issues.length} {issues && issues.length > 1 ? 'issues' : 'issue'}
-        </p>
+        </p> */}
       </div>
       <div>
         {/* These arent necessary here so commented out for now    */}
