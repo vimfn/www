@@ -15,7 +15,7 @@
     "@headlessui/react": "^1.6.6",
     "@tailwindcss/line-clamp": "^0.4.0",
     "classnames": "^2.3.1",
-    "contentlayer": "^0.2.6",
+    "contentlayer": "^0.3.4",
     "feed": "^4.2.2",
     "framer-motion": "^6.4.3",
     "katex": "^0.16.2",
