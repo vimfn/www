@@ -1,12 +1,18 @@
 import { clsx } from "clsx";
-import { execa } from "execa";
+// import { execa } from "execa";
 import type { ComponentProps } from "react";
 import { Emoji } from "@/components/misc/emoji";
 
-async function getLatestCommit() {
-  const { stdout } = await execa("git", ["rev-parse", "--short", "HEAD"]);
+// async function getLatestCommit() {
+//   const { stdout } = await execa("git", ["rev-parse", "--short", "HEAD"]);
 
-  return stdout;
+//   return stdout;
+// }
+
+function getLatestCommit() {
+  const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
+  const label = sha ? sha.slice(0, 7) : null;
+  return label;
 }
 
 export async function Footer({
