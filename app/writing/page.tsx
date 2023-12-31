@@ -39,7 +39,6 @@ const writingPage = () => {
             className="w-full cursor-pointer"
             aria-label={post.metadata.title}
             href={`/writing/${post.slug}`}
-            data-umami-event={post.metadata.title.split(" ").join("_")}
           >
             <div className="w-full  py-1 transform hover:scale-[1.01] transition-all">
               <div className="flex flex-col sm:flex-row justify-between sm:items-center">

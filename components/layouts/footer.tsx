@@ -39,7 +39,6 @@ export async function Footer({
           href="https://github.com/arnvgh"
           rel="noreferrer"
           target="_blank"
-          data-umami-event="github"
         >
           <svg
             className="translate-y-px"

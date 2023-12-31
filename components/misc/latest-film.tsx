@@ -52,7 +52,6 @@ export function LatestFilm({ className, ...props }: ComponentProps<"a">) {
       href={url}
       rel="noreferrer"
       target="_blank"
-      data-umami-event="letterboxd"
       {...props}
     >
       <div className="highlight dark:highlight-invert relative aspect-[2/3] h-20 flex-none overflow-hidden rounded bg-zinc-100 dark:bg-zinc-800">

@@ -48,7 +48,6 @@ export function LatestSong({ className, ...props }: ComponentProps<"a">) {
       href={url}
       rel="noreferrer"
       target="_blank"
-      data-umami-event="lastfm"
       {...props}
     >
       <div className="highlight dark:highlight-invert relative aspect-square h-20 flex-none overflow-hidden rounded bg-zinc-100 dark:bg-zinc-800">
