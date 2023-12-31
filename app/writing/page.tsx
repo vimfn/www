@@ -25,10 +25,10 @@ const writingPage = () => {
             <Rss className="inline-flex mb-1 ml-1" size={16} />
           </Link>
           or follow on
-          <a href="https://x.com/arnvgh" target="_blank" className="link ml-1">
+          <a href="https://x.com/arnvgh" target="_blank" className="link mx-1">
             Twitter
           </a>
-          .
+          for updates.
         </p>
       </div>
       {allBlogs

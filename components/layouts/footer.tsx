@@ -32,7 +32,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
         </span>
         <a
           className="link ml-auto inline-flex items-center gap-1.5"
-          href="https://github.com/arnvgh"
+          href="https://github.com/arnvgh/www"
           rel="noreferrer"
           target="_blank"
         >

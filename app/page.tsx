@@ -7,7 +7,7 @@ import Intro from "@/components/misc/intro";
 
 const Home = () => {
   return (
-    <section className="md:mt-8 lg:mt-10 pt-8">
+    <section className="md:mt-8 lg:mt-10 pt-8 pb-16">
       <h1 className="mt-0 mb-1 text-xl font-medium dark:text-white">
         Arunava Ghosh
       </h1>
