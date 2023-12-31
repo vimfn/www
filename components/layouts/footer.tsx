@@ -1,13 +1,6 @@
 import { clsx } from "clsx";
-// import { execa } from "execa";
 import type { ComponentProps } from "react";
 import { Emoji } from "@/components/misc/emoji";
-
-// async function getLatestCommit() {
-//   const { stdout } = await execa("git", ["rev-parse", "--short", "HEAD"]);
-
-//   return stdout;
-// }
 
 function getLatestCommit() {
   const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
@@ -15,11 +8,8 @@ function getLatestCommit() {
   return label;
 }
 
-export async function Footer({
-  className,
-  ...props
-}: ComponentProps<"footer">) {
-  const commit = await getLatestCommit();
+export function Footer({ className, ...props }: ComponentProps<"footer">) {
+  const commit = getLatestCommit();
   const year = String(new Date().getFullYear());
 
   return (

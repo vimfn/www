@@ -22,11 +22,11 @@ const Home = () => {
       </div>
       <Intro />
       <div className="flex pt-3 mt-5 gap-3">
-        <div>
+        <div className="w-48 h-48">
           <video
             width={192}
             height={192}
-            className="pb-1 w-48"
+            className="w-full h-full object-cover"
             autoPlay
             loop
             muted
