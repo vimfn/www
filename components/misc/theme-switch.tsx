@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function ThemeSwitch() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -20,6 +20,7 @@ export default function ThemeSwitch() {
   function onThemeChange() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
+
   return (
     <>
       <div className="flex items-center justify-center">
@@ -30,7 +31,7 @@ export default function ThemeSwitch() {
           className="flex flex-col items-center justify-center w-10 h-10 ml-1 overflow-hidden font-medium duration-200 ease-in-out rounded-md sm:p-4 text-text hover:bg-overlay"
         >
           <AnimatePresence mode="wait">
-            {theme == "light" && (
+            {resolvedTheme === "light" && (
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -40,7 +41,7 @@ export default function ThemeSwitch() {
                 <Moon size={15}/>
               </motion.span>
             )}
-            {theme == "dark" && (
+            {resolvedTheme === "dark" && (
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
