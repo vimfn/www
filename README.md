@@ -1,5 +1,3 @@
----
-
 ## Technology Stack
 
 This is a list of the various technologies used to build this website:
@@ -12,8 +10,6 @@ This is a list of the various technologies used to build this website:
 | Components          | [shadcn/ui](https://ui.shadcn.com/)                                       |
 | Styling             | [Tailwind](https://tailwindcss.com)                                       |
 | Analytics           | [Umami](https://umami.is/)                                                |
-
----
 
 ## Forking and Cloning Notice
 
