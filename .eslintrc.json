@@ -1,7 +1,0 @@
-// https://eslint.org/docs/latest/user-guide/configuring/
-{
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "@next/next/no-img-element": "off"
-  }
-}
