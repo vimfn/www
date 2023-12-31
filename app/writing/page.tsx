@@ -2,6 +2,13 @@ import { getBlogPosts } from "@/lib/blog";
 import Link from "next/link";
 import { extractDate } from "@/lib/utils";
 import { Rss } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // writing",
+  description:
+    "My blogs about programming, computers, linux, and occasional life insights.",
+};
 
 const writingPage = () => {
   let allBlogs = getBlogPosts();
@@ -20,7 +27,8 @@ const writingPage = () => {
           or follow on
           <a href="https://x.com/arnvgh" target="_blank" className="link ml-1">
             Twitter
-          </a>.
+          </a>
+          .
         </p>
       </div>
       {allBlogs

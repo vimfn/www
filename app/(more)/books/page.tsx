@@ -1,5 +1,12 @@
 import { LatestBook } from "@/components/misc/latest-book";
 import { booksData } from "./books";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // books",
+  description:
+    "Find some of my favorite book collections and the one currently reading.",
+};
 
 const booksPage = () => {
   return (

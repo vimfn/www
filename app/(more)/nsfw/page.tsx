@@ -1,4 +1,9 @@
-// Idea stolen from matias.ma/nsfw still not implemented
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // nsfw",
+  description: "🥵",
+};
 
 const nsfwPage = () => {
   return <div>nsfwPage</div>;

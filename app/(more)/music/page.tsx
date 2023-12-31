@@ -1,5 +1,11 @@
 import { LatestSong } from "@/components/misc/latest-song";
 import TopAblums from "@/components/misc/top-albums";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // music",
+  description: "Get an Idea of my music taste.",
+};
 
 const MusicPage = () => {
   return (

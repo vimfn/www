@@ -1,4 +1,9 @@
-import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // uses",
+  description: "A list of software and hardware that I use.",
+};
 
 const usesPage = () => {
   return (
@@ -24,11 +29,7 @@ const usesPage = () => {
         alt="dwm"
       /> */}
       <h2 className="text-xl font-bold pb-8">OS</h2>
-      <ul>
-        <li>
-          
-        </li>
-      </ul>
+      WIP, Please check back later.
     </div>
   );
 };

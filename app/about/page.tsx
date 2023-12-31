@@ -1,5 +1,10 @@
 import { Time } from "@/components/misc/time";
-import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // about",
+  description: "Most of the things you (maybe) want to know about me.",
+};
 
 const aboutPage = () => {
   return (

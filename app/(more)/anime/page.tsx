@@ -1,6 +1,12 @@
 import { AnimeCard } from "@/components/misc/anime-card";
 import { Anime, AnimeData } from "./anime";
 import { LatestFilm } from "@/components/misc/latest-film";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // anime",
+  description: "Find a list of my fav and currently watching anime.",
+};
 
 const animePage = () => {
   return (

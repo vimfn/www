@@ -5,6 +5,13 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { faqs } from "./faqs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // faqs",
+  description:
+    "Redirected here? It means you have asked me something that has already been asked many times. Please don't think I am rude.",
+};
 
 const pinsPage = () => {
   return (

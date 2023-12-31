@@ -3,7 +3,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import Intro from "./intro";
+import Intro from "@/components/misc/intro";
 
 const Home = () => {
   return (

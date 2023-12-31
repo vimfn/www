@@ -8,6 +8,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "arnvgh // work",
+  description: "Find a list of all my projects here.",
+};
 
 const workPage = () => {
   return (
