@@ -75,6 +75,9 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  experimental: {
+    optimizeUniversalDefaults: true,
+  },
 } satisfies Config;
 
 export default config;

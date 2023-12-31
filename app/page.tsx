@@ -4,7 +4,6 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import Intro from "./intro";
-import Image from "next/image";
 
 const Home = () => {
   return (
@@ -24,14 +23,17 @@ const Home = () => {
       <Intro />
       <div className="flex pt-3 mt-5 gap-3">
         <div>
-          <Image
+          <video
             width={192}
             height={192}
-            src="/bug.gif"
             className="pb-1 w-48"
-            alt="fix the bugs"
-            priority
-          />
+            autoPlay
+            loop
+            muted
+          >
+            <source src="/bug.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
           <p className="text-zinc-400 text-xs">(time to fix it)</p>
         </div>
       </div>

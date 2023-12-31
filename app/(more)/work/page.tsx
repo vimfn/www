@@ -36,7 +36,7 @@ const workPage = () => {
         </p>
       </div>
       <Table className="">
-        <TableCaption>A list of all my projects.</TableCaption>
+        <TableCaption>A list of my projects.</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]">Project</TableHead>

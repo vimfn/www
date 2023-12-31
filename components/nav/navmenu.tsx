@@ -25,40 +25,40 @@ const components: {
   {
     title: "work",
     href: "/work",
-    img: "/work.gif",
+    img: "/images/work.webp",
     description: "Projects and Experience.",
   },
 
   {
     title: "music",
     href: "/music",
-    img: "/music.gif",
+    img: "/images/music.webp",
     description: "Listening History and current obsessions.",
   },
   {
     title: "anime",
     href: "/anime",
-    img: "/anime.gif",
+    img: "/images/anime.webp",
 
     description: "My Fav Animes and more.",
   },
   {
     title: "books",
     href: "/books",
-    img: "/books.gif",
+    img: "/images/books.webp",
 
     description: "Books I found interesting or have been reading.",
   },
   {
     title: "uses",
     href: "/uses",
-    img: "/uses.gif",
+    img: "/images/uses.webp",
     description: "Stuff I use daily.",
   },
   {
     title: "FAQs",
     href: "/faqs",
-    img: "/movies.gif",
+    img: "/images/faqs.webp",
     description: "Collection of all the movies I watched.",
   },
 ];

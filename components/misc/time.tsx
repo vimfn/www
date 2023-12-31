@@ -50,16 +50,8 @@ export function Time() {
     <div className="h-48 pointer-events-none relative">
       <div
         className={`h-48 rounded-md relative
-        first-letter:w-full flex justify-center items-center select-none
-        ${isNight ? "text-white" : "text-[#2c2c2c]"}`}
+        first-letter:w-full flex justify-center items-center select-none`}
       >
-        <Image
-          src={isNight ? "/night.webp" : "/day.webp"}
-          alt="Background Image"
-          width={1550}
-          height={1550}
-          className="w-full h-full rounded-md object-center"
-        />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center">
           <h2
             className="font-bold text-5xl text-center"

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { ThemeProvider } from "@/components/misc/theme-provider";
 import Header from "@/components/layouts/header";
-import { cn } from "@/lib/utils";
 import { Footer } from "@/components/layouts/footer";
 import Image from "next/image";
 import Analytics from "@/components/misc/Analytics";
@@ -69,7 +68,7 @@ export default function RootLayout({
               width={1512}
               height={550}
               className="absolute left-0 md:left-1/2 top-0 -z-10 -translate-x-1/2 scale-150 md:scale-100 object-cover w-full md:w-auto"
-              src="/gradient-background-top.png"
+              src="/gradient.webp"
               alt="Gradient background"
               priority
             />

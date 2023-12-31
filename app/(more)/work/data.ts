@@ -11,7 +11,7 @@ export const workData = [
     title: "links",
     year: "2023",
     shortDesc:
-      "An elegant links manager allowing users to create, read, update, and delete various links, share them, and connect with LastFM to display real-time song plays. Includes a dashboard and analytics.",
+      "An elegant links manager allowing users to manage links, share them, and connect with LastFM to display real-time song plays. Includes a dashboard and analytics.",
     link: `${GITHUB}/links`,
   },
   {
@@ -30,7 +30,7 @@ export const workData = [
     title: "animedoro",
     year: "2022",
     shortDesc:
-      "A beautiful looking pomodoro timer app built with Nextjs 13 App routers with users around the world. <br/> (source: google analytics)",
+      "A beautiful looking pomodoro timer app.",
     link: `${GITHUB}/animedoro`,
   },
   {
@@ -44,14 +44,14 @@ export const workData = [
     title: "sticker-shinobi",
     year: "2023",
     shortDesc:
-      "A sticker selling platform made while trying out NextJS App router.",
+      "A sticker selling ecommerce platform.",
     link: "https://github.com/arnvgh/stickershinobi",
   },
   {
     title: "An AI Anime vTuber (whom you can talk to)",
     year: "2023",
     shortDesc:
-      "Made with the help of OpenAI Api (and later with other OpenSource LLMs) and Python, this AI VTuber can talk, transcibe reply and do face movements based on users input (voice).",
+      "AI VTuber who can talk, transcibe reply and do face movements based on users input (voice).",
     link: "",
   },
   {
