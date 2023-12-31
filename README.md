@@ -1,5 +1,3 @@
----
-
 ## Technology Stack
 
 This is a list of the various technologies used to build this website:
@@ -13,7 +11,6 @@ This is a list of the various technologies used to build this website:
 | Styling             | [Tailwind](https://tailwindcss.com)                                       |
 | Analytics           | [Umami](https://umami.is/)                                                |
 
----
 
 ## Forking and Cloning Notice
 
