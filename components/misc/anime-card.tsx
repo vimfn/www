@@ -13,6 +13,15 @@ export const AnimeCard = ({
 }: Anime) => {
   const [hovering, setHovering] = useState(false);
 
+  const imageOpacity = hovering ? "opacity-40" : "opacity-100";
+  const textOpacity = hovering ? "opacity-100" : "opacity-0";
+  const sparkles = starred ? <Sparkles className="mr-2" /> : null;
+  const altTitleElement = altTitle ? (
+    <div className="text-xs text-gray-900 dark:text-gray-200 italic font-semibold opacity-75">
+      ({altTitle})
+    </div>
+  ) : null;
+
   return (
     <a
       href={href}
@@ -25,25 +34,17 @@ export const AnimeCard = ({
       className="relative h-32 focus:outline-none transition duration-300 ease-in-out transform hover:scale-102.5 flex flex-col sm:flex-row text-center sm:text-left shadow-lg max-w-2xl"
     >
       <div
-        className={`transition duration-300 ease-in-out ${
-          hovering ? "opacity-40" : "opacity-100 "
-        } rounded-md bg-cover bg-ce absolute w-full h-full`}
+        className={`transition duration-300 ease-in-out ${imageOpacity} rounded-md bg-cover bg-ce absolute w-full h-full`}
         style={{ backgroundImage: `url('/anime/${imgName}.webp')` }}
       ></div>
       <div
-        className={`transition duration-300 ease-in-out ${
-          hovering ? "opacity-100" : "opacity-0 "
-        } ml-0 sm:ml-4 z-40 text-2xl my-auto font-bold`}
+        className={`transition duration-300 ease-in-out ${textOpacity} ml-0 sm:ml-4 z-40 text-2xl my-auto font-bold`}
       >
         <div>
-          {starred && <Sparkles className="mr-2" />}
+          {sparkles}
           {title}
         </div>{" "}
-        {altTitle && (
-          <div className="text-xs text-gray-900 dark:text-gray-200 italic font-semibold opacity-75">
-            ({altTitle})
-          </div>
-        )}
+        {altTitleElement}
       </div>
     </a>
   );
