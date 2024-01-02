@@ -20,10 +20,10 @@ const writingPage = () => {
         <p>
           Programming, Computers, Linux, and occasional life insights. Subscribe
           to
-          <Link className="link mx-1 items-center" href={"/rss.xml"}>
+          <a className="link mx-1 items-center" href={"/rss.xml"}>
             RSS
             <Rss className="inline-flex mb-1 ml-1" size={16} />
-          </Link>
+          </a>
           or follow on
           <a href="https://x.com/arnvgh" target="_blank" className="link mx-1">
             Twitter
