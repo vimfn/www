@@ -47,11 +47,18 @@ export const faqs: faq[] = [
   },
   {
     question: "What are some of your favorite YouTube channels?",
-    // https://www.youtube.com/@Fireship
-    // https://www.youtube.com/@Fireship
-    // https://www.youtube.com/@ThePrimeTimeagen
     answer:
-      "Well, there are plenty of them, to be honest, but <a target='_blank' class='link' href='https://start.solidjs.com/getting-started/what-is-solidstart'>Fireship</a>, <a target='_blank' class='link' href='https://start.solidjs.com/getting-started/what-is-solidstart'>Theo - t3.gg</a>, and <a target='_blank' class='link' href='https://www.youtube.com/@ThePrimeTimeagen'>ThePrimeTime</a> are some of my favorites.",
+      "Well, there are plenty of them, to be honest, but <a target='_blank' class='link' href='https://www.youtube.com/@Fireship'>Fireship</a>, <a target='_blank' class='link' href='https://www.youtube.com/@t3dotgg'>Theo - t3.gg</a>, and <a target='_blank' class='link' href='https://www.youtube.com/@ThePrimeTimeagen'>ThePrimeTime</a> are some of my favorites.",
+  },
+  {
+    question: "How can I donate or sponsor you? Is there a way to do that?",
+    answer:
+      "I appreciate your willingness to support me. You can sponsor me on my <a target='_blank' class='link' href=' https://github.com/sponsors/arnvgh'>GitHub page</a>.",
+  },
+  {
+    question: "Where can I find your GPG keys?",
+    answer:
+      "If you're interested in sending me an encrypted message, you can find my GPG keys<a target='_blank' class='link' href='https://keys.openpgp.org/search?q=arnvgh%40gmail.com'> here</a>.",
   },
   //   {
   //     question: "",
