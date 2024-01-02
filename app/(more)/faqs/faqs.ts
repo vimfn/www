@@ -5,7 +5,7 @@ export interface faq {
 
 export const faqs: faq[] = [
   {
-    question: "What doesn your name mean?",
+    question: "What does your name mean?",
     answer:
       "I'm from Kolkata, India, and my name, Arunava, combines two Sanskrit words. 'Aruna' means 'glowing like the morning sun,' and 'ava' means 'like' or 'in the manner of.' Therefore, Arunava can be interpreted as 'like the morning sun' or 'radiant like the dawn.'",
   },
@@ -58,7 +58,7 @@ export const faqs: faq[] = [
   {
     question: "Where can I find your GPG keys?",
     answer:
-      "If you're interested in sending me an encrypted message, you can find my GPG keys<a target='_blank' class='link' href='https://keys.openpgp.org/search?q=arnvgh%40gmail.com'> here</a>.",
+      "If you're interested in sending me an encrypted message, you can find my GPG keys <a target='_blank' class='link' href='https://keys.openpgp.org/search?q=arnvgh%40gmail.com'>here</a>.",
   },
   //   {
   //     question: "",
