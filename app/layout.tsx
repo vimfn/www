@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     creator: info.twitter,
     images: info.image,
   },
-  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
@@ -50,7 +49,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Analytics />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -75,6 +73,17 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
       </body>
+      <Analytics />
+      <link
+        href="/favicon-light.ico"
+        rel="icon"
+        media="(prefers-color-scheme: light)"
+      />
+      <link
+        href="/favicon-dark.ico"
+        rel="icon"
+        media="(prefers-color-scheme: dark)"
+      />
     </html>
   );
 }
