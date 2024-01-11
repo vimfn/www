@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const booksPage = () => {
   return (
-    <div className="md:mt-8 lg:mt-10 pt-8 pb-16 dark:text-zinc-200">
+    <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Books</h1>
         Aside from reading many lines of code, errors, and pages of
@@ -36,7 +36,7 @@ const booksPage = () => {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

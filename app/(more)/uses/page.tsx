@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const usesPage = () => {
   return (
-    <div className="md:mt-8 lg:mt-10 pt-8 pb-16 dark:text-zinc-200">
+    <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Uses</h1>
         Here's a list of software and hardware that I use on a regular basis.
@@ -30,7 +30,7 @@ const usesPage = () => {
       /> */}
       <h2 className="text-xl font-bold pb-8">OS</h2>
       WIP, Please check back later.
-    </div>
+    </section>
   );
 };
 

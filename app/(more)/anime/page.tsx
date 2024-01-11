@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const animePage = () => {
   return (
-    <div className="md:mt-8 lg:mt-10 pt-8 pb-16 dark:text-zinc-200">
+    <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Anime</h1>
         I have loved watching anime since childhood. My first anime was Death
@@ -35,7 +35,7 @@ const animePage = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const pinsPage = () => {
   return (
-    <div className="md:mt-8 lg:mt-10 pt-8 pb-16 dark:text-zinc-200">
+    <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">FAQs</h1>
         I've gathered some commonly asked questions here to save time for both
@@ -35,7 +35,7 @@ const pinsPage = () => {
           </AccordionItem>
         </Accordion>
       ))}
-    </div>
+    </section>
   );
 };
 

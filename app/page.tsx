@@ -31,7 +31,7 @@ const Home = () => {
             loop
             muted
           >
-            <source src="/bug.webm" type="video/webm" />
+            <source src="/bug2.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <p className="text-zinc-400 text-xs">(time to fix it)</p>

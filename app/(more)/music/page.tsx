@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const MusicPage = () => {
   return (
-    <div className="md:mt-8 lg:mt-10 pt-8 pb-16 dark:text-zinc-200">
+    <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Music</h1>
         Music has always been something near to my heart. Whether it&apos;s a
@@ -38,7 +38,7 @@ const MusicPage = () => {
         weeks.
       </p>
       <TopAblums />
-    </div>
+    </section>
   );
 };
 
