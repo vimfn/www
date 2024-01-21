@@ -182,9 +182,10 @@ export const BrowserTab = () => {
       </div>
       {BrowserTabData.map((data, i) => (
         <div key={i}>
-          <span className="text-zinc-600 dark:text-zinc-400">
-            {i + 1}. {data.desc}
-          </span>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            <span className="dark:text-white">{i + 1}. </span>
+            {data.desc}
+          </p>
         </div>
       ))}
     </div>
