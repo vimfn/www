@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+import { UsesTabs } from "@/components/misc/uses-tab";
+import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
   title: "arnvgh // uses",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 const usesPage = () => {
   return (
     <section>
-      <div className="pb-10">
+      <div className="pb-5">
         <h1 className="text-2xl font-bold pb-8">Uses</h1>
         Here's a list of software and hardware that I use on a regular basis.
         <br />
@@ -21,15 +22,7 @@ const usesPage = () => {
           anything, please let me know.
         </p>
       </div>
-      {/* <Image
-        src="/dwm.png"
-        className="rounded-md"
-        width={1920}
-        height={1080}
-        alt="dwm"
-      /> */}
-      <h2 className="text-xl font-bold pb-8">OS</h2>
-      WIP, Please check back later.
+      <UsesTabs />
     </section>
   );
 };

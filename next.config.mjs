@@ -1,3 +1,4 @@
+import million from 'million/compiler';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
@@ -102,4 +103,6 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default million.next(
+  nextConfig, { auto: { rsc: true } }
+);

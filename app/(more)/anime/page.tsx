@@ -23,7 +23,7 @@ const animePage = () => {
         <br />
         <p>Below are some of my all-time favorite anime.</p>
       </div>
-      <div className="grid gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {AnimeData.map((anime: Anime) => (
           <AnimeCard
             key={anime.href}

@@ -4,7 +4,6 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-// import { Icons } from "@/components/icons"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +11,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 
@@ -56,7 +54,7 @@ const components: {
     description: "Stuff I use daily.",
   },
   {
-    title: "FAQs",
+    title: "faqs",
     href: "/faqs",
     img: "/images/faqs.webp",
     description: "Collection of all the movies I watched.",
@@ -84,8 +82,8 @@ export function NavMenu() {
                     className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
                     src={component.img}
                     alt=""
-                    width={1500}
-                    height={1500}
+                    width={150}
+                    height={150}
                   />
                 </ListItem>
               ))}
