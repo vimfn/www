@@ -231,7 +231,7 @@ export const WebsiteTab = () => {
       <p>
         This website is created with Next.js, Tailwind CSS, MDX, Umami, and
         PlanetScale. It's hosted on Vercel. If you're curious, feel free to
-        explore the source code on
+        explore the source code on{" "}
         <a
           href="https://github.com/arnvgh/www"
           className="link"
