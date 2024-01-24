@@ -4,6 +4,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import Intro from "@/components/misc/intro";
+import GridCards from "@/components/misc/(home)/grid-cards";
 
 const Home = () => {
   return (
@@ -21,23 +22,7 @@ const Home = () => {
         </HoverCard>
       </div>
       <Intro />
-      <div className="flex pt-3 mt-5 gap-3">
-        <div className="w-48 h-48">
-          <video
-            width={192}
-            height={192}
-            className="w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="/bug.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-          <p className="text-zinc-400 text-xs">(time to fix it)</p>
-        </div>
-      </div>
+      <GridCards />
     </section>
   );
 };
