@@ -20,3 +20,4 @@ export * from "./cpp";
 export * from "./graphql";
 export * from "./golang";
 export * from "./godot";
+export * from "./music";

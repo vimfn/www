@@ -10,54 +10,15 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+
 import Image from "next/image";
 
-const components: {
-  title: string;
-  href: string;
-  img: string;
-  description: string;
-}[] = [
-  {
-    title: "work",
-    href: "/work",
-    img: "/images/work.webp",
-    description: "Projects and Experience.",
-  },
-
-  {
-    title: "music",
-    href: "/music",
-    img: "/images/music.webp",
-    description: "Listening History and current obsessions.",
-  },
-  {
-    title: "anime",
-    href: "/anime",
-    img: "/images/anime.webp",
-
-    description: "My Fav Animes and more.",
-  },
-  {
-    title: "books",
-    href: "/books",
-    img: "/images/books.webp",
-
-    description: "Books I found interesting or have been reading.",
-  },
-  {
-    title: "uses",
-    href: "/uses",
-    img: "/images/uses.webp",
-    description: "Stuff I use daily.",
-  },
-  {
-    title: "faqs",
-    href: "/faqs",
-    img: "/images/faqs.webp",
-    description: "Collection of all the movies I watched.",
-  },
-];
+import work from "@/public/images/work.webp";
+import books from "@/public/images/books.webp";
+import anime from "@/public/images/anime.webp";
+import music from "@/public/images/music.webp";
+import faqs from "@/public/images/faqs.webp";
+import uses from "@/public/images/uses.webp";
 
 export function NavMenu() {
   return (
@@ -69,22 +30,80 @@ export function NavMenu() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="text-white grid w-[150px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[350px]">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                  className="relative z-10 hover:text-white hover:opacity-80"
-                >
-                  <Image
-                    className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                    src={component.img}
-                    alt=""
-                    width={150}
-                    height={150}
-                  />
-                </ListItem>
-              ))}
+              <ListItem
+                title="work"
+                href="/work"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={work}
+                  alt="work"
+                  placeholder="blur"
+                />
+              </ListItem>
+              <ListItem
+                title="music"
+                href="/music"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={music}
+                  alt="music"
+                  placeholder="blur"
+                />
+              </ListItem>
+
+              <ListItem
+                title="anime"
+                href="/anime"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={anime}
+                  alt="anime"
+                  placeholder="blur"
+                />
+              </ListItem>
+              <ListItem
+                title="books"
+                href="/books"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={books}
+                  alt="books"
+                  placeholder="blur"
+                />
+              </ListItem>
+              <ListItem
+                title="uses"
+                href="/uses"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={uses}
+                  alt="uses"
+                  placeholder="blur"
+                />
+              </ListItem>
+
+              <ListItem
+                title="faqs"
+                href="/faqs"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={faqs}
+                  alt="faqs"
+                  placeholder="blur"
+                />
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
