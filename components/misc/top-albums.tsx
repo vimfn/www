@@ -33,9 +33,7 @@ export default async function TopAblums() {
               image: { [x: string]: string }[];
               url: string;
             }) => (
-              //@ts-ignore
               <AlbumCard
-                //@ts-ignore
                 key={album.url}
                 artist={album.artist.name}
                 name={truncate(album.name, 25)}
