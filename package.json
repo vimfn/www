@@ -22,9 +22,9 @@
     "embla-carousel-autoplay": "8.0.0-rc20",
     "embla-carousel-react": "8.0.0-rc20",
     "fast-xml-parser": "^4.3.3",
-    "framer-motion": "^10.18.0",
+    "framer-motion": "^11.0.3",
     "html-entities": "^2.4.0",
-    "lucide-react": "^0.314.0",
+    "lucide-react": "^0.315.0",
     "million": "^2.6.4",
     "next": "14.1.0",
     "next-mdx-remote": "^4.4.1",
@@ -42,6 +42,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@octokit/types": "^12.4.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^18",
