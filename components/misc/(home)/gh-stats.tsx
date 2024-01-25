@@ -10,17 +10,22 @@ const getStats = cache(
         pullRequests: { totalCount: number };
         openIssues: { totalCount: number };
         closedIssues: { totalCount: number };
+        followers: { totalCount: number };
+        repositories: {
+          totalCount: number;
+          nodes: {
+            stargazers: { totalCount: number };
+          }[];
+          pageInfo: {
+            hasNextPage: boolean;
+            endCursor: string | null;
+          };
+        };
       };
     }>(
       gql`
         query ($login: String!) {
           user(login: $login) {
-            repositoriesContributedTo(
-              first: 1
-              contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]
-            ) {
-              totalCount
-            }
             pullRequests(first: 1) {
               totalCount
             }
@@ -30,6 +35,21 @@ const getStats = cache(
             closedIssues: issues(states: CLOSED) {
               totalCount
             }
+            followers {
+              totalCount
+            }
+            repositories(ownerAffiliations: OWNER, first: 100) {
+              totalCount
+              nodes {
+                stargazers {
+                  totalCount
+                }
+              }
+              pageInfo {
+                hasNextPage
+                endCursor
+              }
+            }
           }
         }
       `,
@@ -38,7 +58,11 @@ const getStats = cache(
     return {
       issues: user.closedIssues.totalCount + user.openIssues.totalCount,
       prs: user.pullRequests.totalCount,
-      contribs: user.repositoriesContributedTo.totalCount,
+      followers: user.followers.totalCount,
+      stars: user.repositories.nodes.reduce(
+        (totalStars, repo) => totalStars + repo.stargazers.totalCount,
+        0
+      ),
     };
   },
   [],
@@ -46,14 +70,13 @@ const getStats = cache(
 );
 
 function BackgroundPattern() {
-  // For uniform patterns
   let seed = 1;
   function seededRandom() {
     const x = Math.sin(seed++) * 10000;
     return x - Math.floor(x);
   }
   const colours = ["#39d353", "#0e4429", "#006d32", "#161b22"];
-  const days = new Array(49)
+  const days = new Array(51)
     .fill(null)
     .map((_) => colours[Math.floor(seededRandom() * colours.length)]);
   return (
@@ -87,24 +110,22 @@ function GitHubStatsData({
 }
 
 const GHStats = async () => {
-  const { issues, prs, contribs } = await getStats();
+  const { issues, prs, followers, stars } = await getStats();
   return (
-    <div className="border shadow-sm dark:bg-[#0d1117] rounded-lg h-36 relative">
-      <BackgroundPattern />
-      <div className="flex flex-row flex-wrap gap-x-6 sm:gap-x-4 md:gap-x-6 absolute bottom-1 p-2">
-        <GitHubStatsData label="Issues" value={issues} />
-        <GitHubStatsData label="PRs" value={prs} />
-        <hr className="w-full border-none" />
-        <GitHubStatsData
-          label={
-            <>
-              Contributed to
-              <span className="sm:hidden md:inline"> (last year)</span>
-            </>
-          }
-          value={contribs}
-        />
-      </div>
+    <div className="bg-[#f7f2f2] dark:bg-[#0d1117] rounded-lg h-36 relative group">
+      <a
+        href="http://github.com/arnvgh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BackgroundPattern />
+        <div className="flex flex-row flex-wrap gap-x-6 sm:gap-x-4 md:gap-x-6 absolute bottom-1 p-2">
+          <GitHubStatsData label="Stars" value={stars} />
+          <GitHubStatsData label="Followers" value={followers} />
+          <GitHubStatsData label="PRs" value={prs} />
+          <GitHubStatsData label="Issues" value={issues} />
+        </div>
+      </a>
     </div>
   );
 };

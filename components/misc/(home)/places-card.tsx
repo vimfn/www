@@ -2,9 +2,13 @@
 
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
-import place from "@/public/images/places/1.jpg";
-import place2 from "@/public/images/places/2.jpg";
-import place3 from "@/public/images/places/3.jpg";
+import place1 from "@/public/images/places/place1.jpg";
+import place2 from "@/public/images/places/place2.jpg";
+import place3 from "@/public/images/places/place3.jpg";
+import place4 from "@/public/images/places/place4.jpg";
+import place5 from "@/public/images/places/place5.jpg";
+import place6 from "@/public/images/places/place6.jpg";
+import place7 from "@/public/images/places/place7.jpg";
 
 import {
   Carousel,
@@ -31,9 +35,11 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place}
+              src={place1}
               alt=""
-              className="rounded-lg object-cover h-36"
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs "
+              placeholder="blur"
+              priority
             />
           </div>
         </CarouselItem>
@@ -42,7 +48,8 @@ export function PlacesCard() {
             <Image
               src={place2}
               alt=""
-              className="rounded-lg object-cover h-36"
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              placeholder="blur"
             />
           </div>
         </CarouselItem>
@@ -51,7 +58,48 @@ export function PlacesCard() {
             <Image
               src={place3}
               alt=""
-              className="rounded-lg object-cover h-36"
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              placeholder="blur"
+            />
+          </div>
+        </CarouselItem>
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place4}
+              alt=""
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              placeholder="blur"
+            />
+          </div>
+        </CarouselItem>
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place5}
+              alt=""
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              placeholder="blur"
+            />
+          </div>
+        </CarouselItem>
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place6}
+              alt=""
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              placeholder="blur"
+            />
+          </div>
+        </CarouselItem>
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place7}
+              alt=""
+              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              placeholder="blur"
             />
           </div>
         </CarouselItem>

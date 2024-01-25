@@ -10,7 +10,7 @@ import StacksCard from "./stacks-card";
 const GridCards = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-6 grid-cols-3 mt-5 gap-3">
+      <div className="grid md:grid-cols-6 grid-cols-3 mt-8 gap-3">
         <div className="col-span-3">
           <PlacesCard />
         </div>
