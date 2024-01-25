@@ -1,4 +1,3 @@
-import { Time } from "@/components/misc/(home)/time";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,15 +8,12 @@ export const metadata: Metadata = {
 const aboutPage = () => {
   return (
     <div className="md:mt-8 lg:mt-10 pt-8 pb-16">
-
-      {/* <div className="pb-6">
-        <Time />
-      </div> */}
+      <h1 className="text-2xl font-bold pb-8">About Me</h1>
 
       <div className="flex flex-col gap-16 dark:text-zinc-200">
         <section className="flex flex-col md:flex-row gap-1 md:gap-9">
           <h2 className="md:w-28 text-zinc-400 font-medium shrink-0 md:text-left">
-            About Me
+            Intro
           </h2>
           <div className="flex flex-col gap-6">
             <p>
