@@ -3,6 +3,8 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import place from "@/public/images/places/1.jpg";
+import place2 from "@/public/images/places/2.jpg";
+import place3 from "@/public/images/places/3.jpg";
 
 import {
   Carousel,
@@ -21,22 +23,38 @@ export function PlacesCard() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xl md:max-w-xs h-36 shadow-sm"
+      className="w-full md:max-w-xs h-36"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="h-36">
-            <div className="rounded-lg border text-card-foreground shadow-sm">
-              <Image
-                src={place}
-                alt=""
-                className="rounded-lg object-cover h-36"
-              />
-            </div>
-          </CarouselItem>
-        ))}
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place}
+              alt=""
+              className="rounded-lg object-cover h-36"
+            />
+          </div>
+        </CarouselItem>
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place2}
+              alt=""
+              className="rounded-lg object-cover h-36"
+            />
+          </div>
+        </CarouselItem>
+        <CarouselItem className="h-36">
+          <div className="rounded-lg text-card-foreground">
+            <Image
+              src={place3}
+              alt=""
+              className="rounded-lg object-cover h-36"
+            />
+          </div>
+        </CarouselItem>
       </CarouselContent>
       <CarouselPrevious className="absolute bottom-3 right-14" />
       <CarouselNext className="absolute bottom-3 right-3" />

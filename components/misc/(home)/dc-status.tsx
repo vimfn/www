@@ -1,11 +1,22 @@
+"use client";
+
+import { LanyardResponse } from "@/app/api/discord/route";
+import fetcher from "@/lib/utils";
+import { DiscordLogoIcon } from "@radix-ui/react-icons";
+import useSWR from "swr";
+
 const DCStatus = () => {
+  const { data, isLoading, error } = useSWR<LanyardResponse>(
+    "/api/discord",
+    fetcher
+  );
+
   return (
-    <div className="dark:bg-[#202124] rounded-lg items-center flex justify-center border shadow-sm">
-      <div className="items-center gap-2 flex justify-center -rotate-12">
-        <span className="w-2 h-2">
-          <span className="absolute w-2 h-2 bg-black/25 dark:bg-white/25 rounded-full"></span>
-        </span>
-        <p>offline</p>
+    <div className="bg-[#a5b4fc] dark:bg-[#0d1317] text-white rounded-lg items-center flex justify-center">
+      <div className="items-center gap-[0.35rem] flex justify-center -rotate-12">
+        <DiscordLogoIcon />
+        {error || (isLoading && <p>offline</p>)}
+        <p>{data?.data.discord_status}</p>
       </div>
     </div>
   );

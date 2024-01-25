@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { CloudMoon, CloudSun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export const INTimeFormatter = new Intl.DateTimeFormat(undefined, {
@@ -47,27 +48,33 @@ export function Time() {
   }, []);
 
   return (
-    <div className="rounded-lg h-36">
+    <div className="rounded-lg">
       <div className="flex flex-col gap-3">
         <div
           className={cn(
-            "flex flex-col justify-center items-center h-[4.125rem] rounded-lg",
-            isNight ? "bg-[#0c4b6f]" : "bg-[#319fff]"
+            "flex flex-col justify-center items-center h-[4.125rem] rounded-lg text-white",
+            isNight ? "bg-[#001324]" : "bg-[#1793d1] "
           )}
         >
           <h2 className="font-bold text-base text-center">
+            {isNight ? (
+              <CloudMoon size={18} className="my-1" />
+            ) : (
+              <CloudSun className="my-1" />
+            )}
+
             {INTimeFormatter.format(time)}
-            <span className="text-sm font-light"> (IST)</span>
+            <span className="text-[0.6rem] font-medium"> (IST)</span>
           </h2>
         </div>
 
-        <div className=" h-[4.125rem] text-sm bg-[#23224c] rounded-lg flex flex-col justify-center">
+        {/* <div className=" h-[4.125rem] text-sm bg-[#23224c] rounded-lg flex flex-col justify-center">
           <h2 className="mx-auto">
             <span className="text-base mr-1">{daysUntilBirthday}</span>
             days
           </h2>
           <span className="mx-auto">until birthday</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

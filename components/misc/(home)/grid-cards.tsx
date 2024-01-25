@@ -3,6 +3,9 @@ import GHStats from "@/components/misc/(home)/gh-stats";
 import { PlacesCard } from "@/components/misc/(home)/places-card";
 import Map from "./map";
 import { Time } from "./time";
+import WakatimeStats from "./wakatime-stats";
+import AnimeCard from "./anime-card";
+import StacksCard from "./stacks-card";
 
 const GridCards = () => {
   return (
@@ -21,8 +24,17 @@ const GridCards = () => {
         <div className="col-span-2 md:order-1 order-2">
           <Map />
         </div>
+        <div className="col-span-1 order-2">
+          <AnimeCard />
+        </div>
         <div className="md:order-2 order-1">
-          <Time />
+          <div className="flex flex-col gap-3">
+            <Time />
+            <WakatimeStats />
+          </div>
+        </div>
+        <div className="col-span-2">
+          <StacksCard />
         </div>
       </div>
     </div>
