@@ -1,178 +1,178 @@
-const LASTFM_API = "https://ws.audioscrobbler.com/2.0"
-const MUSICBRAINZ_API = "https://musicbrainz.org/ws/2"
-const LASTFM_USERNAME = "arnvgh"
-const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${process.env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`
+const LASTFM_API = "https://ws.audioscrobbler.com/2.0";
+const MUSICBRAINZ_API = "https://musicbrainz.org/ws/2";
+const LASTFM_USERNAME = "arnvgh";
+const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${process.env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`;
 const MUSICBRAINZ_ENDPOINT = (mbid: string) => {
-  return `${MUSICBRAINZ_API}/release/${mbid}?fmt=json`
-}
+  return `${MUSICBRAINZ_API}/release/${mbid}?fmt=json`;
+};
 
-type Boolean = "0" | "1"
+type Boolean = "0" | "1";
 
 interface Text<T = string> {
   /**
    * The value's content.
    */
-  "#text": T
+  "#text": T;
 }
 
 interface MusicBrainzID extends Text {
   /**
    * A MusicBrainz identifier.
    */
-  mbid: string
+  mbid: string;
 }
 
 interface Image extends Text {
   /**
    * The image's size.
    */
-  size: "extralarge" | "large" | "medium" | "small"
+  size: "extralarge" | "large" | "medium" | "small";
 }
 
 interface TrackDate extends Text {
   /**
    * A Unix timestamp.
    */
-  uts: string
+  uts: string;
 }
 
 interface RecentTrackAttributes {
   /**
    * Whether the track is currently playing.
    */
-  nowplaying: string
+  nowplaying: string;
 }
 
 interface RecentTrack {
   /**
    * A list of track-specific attributes.
    */
-  "@attr"?: RecentTrackAttributes
+  "@attr"?: RecentTrackAttributes;
 
   /**
    * The album the track is featured in.
    */
-  album: MusicBrainzID
+  album: MusicBrainzID;
 
   /**
    * The track's artist.
    */
-  artist: MusicBrainzID
+  artist: MusicBrainzID;
 
   /**
    * The date at which the track was listened to.
    */
-  date?: TrackDate
+  date?: TrackDate;
 
   /**
    * A cover art image in various sizes.
    */
-  image: Image[]
+  image: Image[];
 
   /**
    * The track's MusicBrainz identifier.
    */
-  mbid: string
+  mbid: string;
 
   /**
    * The track's name.
    */
-  name: string
+  name: string;
 
   /**
    * Whether a preview is available for streaming.
    */
-  streamable: Boolean
+  streamable: Boolean;
 
   /**
    * The track's Last.fm URL.
    */
-  url: string
+  url: string;
 }
 
 interface RecentTracksAttributes {
   /**
    * The current page index.
    */
-  page: string
+  page: string;
 
   /**
    * The amount of tracks per page.
    */
-  perPage: string
+  perPage: string;
 
   /**
    * The total amount of tracks.
    */
-  total: string
+  total: string;
 
   /**
    * The total amount of pages.
    */
-  totalPages: string
+  totalPages: string;
 }
 
 interface RecentTracks {
   /**
    * A list of response-specific attributes.
    */
-  "@attr": RecentTracksAttributes
+  "@attr": RecentTracksAttributes;
 
   /**
    * A list of tracks.
    */
-  track: RecentTrack[]
+  track: RecentTrack[];
 }
 
 interface LastFmResponse {
   /**
    * The response's main content.
    */
-  recenttracks: RecentTracks
+  recenttracks: RecentTracks;
 }
 
 interface MusicBrainzResponse {
   /**
    * The release's release date.
    */
-  date?: string
+  date?: string;
 }
 
 export interface Response {
   /**
    * The song's artist.
    */
-  artist: string
+  artist: string;
 
   /**
    * The song's cover art.
    */
-  cover?: string
+  cover?: string;
 
   /**
    * The date at which the song was listened to.
    */
-  date?: number
+  date?: number;
 
   /**
    * Whether the song is currently playing.
    */
-  playing: boolean
+  playing: boolean;
 
   /**
    * The song's title.
    */
-  title: string
+  title: string;
 
   /**
    * The song's Last.fm URL.
    */
-  url: string
+  url: string;
 
   /**
    * The song's release year.
    */
-  year?: number
+  year?: number;
 }
 
 /**
@@ -183,31 +183,31 @@ export async function getLatestSong(): Promise<Response | undefined> {
     const response: LastFmResponse = await fetch(LASTFM_ENDPOINT).then(
       (response) => {
         if (!response.ok) {
-          throw new Error("There was an error while querying the Last.fm API.")
+          throw new Error("There was an error while querying the Last.fm API.");
         }
 
-        return response.json()
+        return response.json();
       }
-    )
+    );
 
-    const song = response.recenttracks?.track?.[0]
-    const date = song.date?.uts ? Number(song.date?.uts) : undefined
-    const mbid = song.album.mbid
-    let year: number | undefined
+    const song = response.recenttracks?.track?.[0];
+    const date = song.date?.uts ? Number(song.date?.uts) : undefined;
+    const mbid = song.album.mbid;
+    let year: number | undefined;
 
     if (mbid) {
       const release: MusicBrainzResponse = await fetch(
         MUSICBRAINZ_ENDPOINT(mbid)
       ).then((response) => {
-        if (!response.ok) return {}
+        if (!response.ok) return {};
 
-        return response.json()
-      })
+        return response.json();
+      });
 
       if (release.date) {
-        const date = new Date(release.date)
+        const date = new Date(release.date);
 
-        year = date.getFullYear()
+        year = date.getFullYear();
       }
     }
 
@@ -218,11 +218,11 @@ export async function getLatestSong(): Promise<Response | undefined> {
       date,
       url: song.url,
       cover: song.image.find((image) => image.size === "large")?.["#text"],
-      playing: Boolean(song["@attr"]?.nowplaying) ?? !date
-    }
+      playing: Boolean(song["@attr"]?.nowplaying) ?? !date,
+    };
   } catch (error) {
-    console.error(error)
+    console.error(error);
 
-    return
+    return;
   }
 }
