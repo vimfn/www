@@ -23,15 +23,6 @@ import {
   SkillIconsGraphqlDark,
   SkillIconsGodotLight,
   SkillIconsGolang,
-  /* 
-  export * from "./elixir";
-export * from "./docker";
-export * from "./archlinux";
-export * from "./cpp";
-export * from "./graphql";
-export * from "./golang";
-export * from "./godot";
-  */
 } from "@/components/icons";
 
 type MarqueeProps = {
