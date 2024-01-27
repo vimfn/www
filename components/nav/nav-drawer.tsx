@@ -1,5 +1,6 @@
 import {
   Drawer,
+  DrawerClose,
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
@@ -31,82 +32,92 @@ const NavDrawer = () => {
         <DrawerHeader>
           <DrawerTitle className="flex justify-start pb-0">More</DrawerTitle>
         </DrawerHeader>
-
         <ul className="text-white grid gap-3 p-4 h-fit grid-cols-2">
-          <ListItem
-            title="work"
-            href="/work"
-            className="relative z-10 hover:text-white hover:opacity-80"
-          >
-            <Image
-              className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-              src={work}
-              alt="work"
-              placeholder="blur"
-            />
-          </ListItem>
-          <ListItem
-            title="music"
-            href="/music"
-            className="relative z-10 hover:text-white hover:opacity-80"
-          >
-            <Image
-              className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-              src={music}
-              alt="music"
-              placeholder="blur"
-            />
-          </ListItem>
+          <DrawerClose asChild>
+            <ListItem
+              title="work"
+              href="/work"
+              className="relative z-10 hover:text-white hover:opacity-80"
+            >
+              <Image
+                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                src={work}
+                alt="work"
+                placeholder="blur"
+              />
+            </ListItem>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <ListItem
+              title="music"
+              href="/music"
+              className="relative z-10 hover:text-white hover:opacity-80"
+            >
+              <Image
+                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                src={music}
+                alt="music"
+                placeholder="blur"
+              />
+            </ListItem>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <ListItem
+              title="anime"
+              href="/anime"
+              className="relative z-10 hover:text-white hover:opacity-80"
+            >
+              <Image
+                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                src={anime}
+                alt="anime"
+                placeholder="blur"
+              />
+            </ListItem>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <ListItem
+              title="books"
+              href="/books"
+              className="relative z-10 hover:text-white hover:opacity-80"
+            >
+              <Image
+                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                src={books}
+                alt="books"
+                placeholder="blur"
+              />
+            </ListItem>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <ListItem
+              title="uses"
+              href="/uses"
+              className="relative z-10 hover:text-white hover:opacity-80"
+            >
+              <Image
+                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                src={uses}
+                alt="uses"
+                placeholder="blur"
+              />
+            </ListItem>
+          </DrawerClose>
 
-          <ListItem
-            title="anime"
-            href="/anime"
-            className="relative z-10 hover:text-white hover:opacity-80"
-          >
-            <Image
-              className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-              src={anime}
-              alt="anime"
-              placeholder="blur"
-            />
-          </ListItem>
-          <ListItem
-            title="books"
-            href="/books"
-            className="relative z-10 hover:text-white hover:opacity-80"
-          >
-            <Image
-              className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-              src={books}
-              alt="books"
-              placeholder="blur"
-            />
-          </ListItem>
-          <ListItem
-            title="uses"
-            href="/uses"
-            className="relative z-10 hover:text-white hover:opacity-80"
-          >
-            <Image
-              className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-              src={uses}
-              alt="uses"
-              placeholder="blur"
-            />
-          </ListItem>
-
-          <ListItem
-            title="faqs"
-            href="/faqs"
-            className="relative z-10 hover:text-white hover:opacity-80"
-          >
-            <Image
-              className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-              src={faqs}
-              alt="faqs"
-              placeholder="blur"
-            />
-          </ListItem>
+          <DrawerClose asChild>
+            <ListItem
+              title="faqs"
+              href="/faqs"
+              className="relative z-10 hover:text-white hover:opacity-80"
+            >
+              <Image
+                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                src={faqs}
+                alt="faqs"
+                placeholder="blur"
+              />
+            </ListItem>
+          </DrawerClose>
         </ul>
 
         <DrawerFooter>
