@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
 
@@ -19,9 +21,35 @@ import anime from "@/public/images/anime.webp";
 import music from "@/public/images/music.webp";
 import faqs from "@/public/images/faqs.webp";
 import uses from "@/public/images/uses.webp";
+import NavDrawer from "./nav-drawer";
 
 export function NavMenu() {
-  return (
+  const [isMobile, setIsMobile] = React.useState(
+    typeof window !== "undefined" && window.innerWidth < 1024
+  );
+
+  React.useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 1024);
+    }
+
+    if (typeof window !== "undefined") {
+      handleResize();
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      // remove event listener when the component is unmounted to not cause any memory leaks
+      // otherwise the event listener will continue to be active
+      window.removeEventListener("resize", handleResize);
+    };
+    // add `isMobile` state variable as a dependency so that
+    // it is called every time the window is resized
+  }, [isMobile]);
+
+  return isMobile ? (
+    <NavDrawer />
+  ) : (
     <NavigationMenu className="bg-transparent">
       <NavigationMenuList>
         <NavigationMenuItem className="p-0">
