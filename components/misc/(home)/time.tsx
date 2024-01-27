@@ -1,7 +1,8 @@
 "use client";
 
+import { cn } from "@/lib/utils";
+import { CloudMoon, CloudSun } from "lucide-react";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export const INTimeFormatter = new Intl.DateTimeFormat(undefined, {
   timeZone: "Asia/Kolkata",
@@ -47,25 +48,33 @@ export function Time() {
   }, []);
 
   return (
-    <div className="h-48 pointer-events-none relative">
-      <div
-        className={`h-48 rounded-md relative
-        first-letter:w-full flex justify-center items-center select-none`}
-      >
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center">
-          <h2
-            className="font-bold text-5xl text-center"
-            suppressHydrationWarning
-          >
-            {INTimeFormatter.format(time)}
-            <span className="text-sm font-light"> (IST)</span>
-          </h2>
+    <div className="rounded-lg">
+      <div className="flex flex-col gap-3">
+        <div
+          className={cn(
+            "flex flex-col justify-center items-center h-[4.125rem] rounded-lg text-white",
+            isNight ? "bg-[#001324]" : "bg-[#1793d1] "
+          )}
+        >
+          <h2 className="font-bold text-base text-center">
+            {isNight ? (
+              <CloudMoon size={18} className="my-1" />
+            ) : (
+              <CloudSun className="my-1" />
+            )}
 
-          <p className="text-inherit font-light ">
-            {daysUntilBirthday} days until birthday
-          </p>
-          <p className="text-inherit "></p>
+            {INTimeFormatter.format(time)}
+            <span className="text-[0.6rem] font-medium"> (IST)</span>
+          </h2>
         </div>
+
+        {/* <div className=" h-[4.125rem] text-sm bg-[#23224c] rounded-lg flex flex-col justify-center">
+          <h2 className="mx-auto">
+            <span className="text-base mr-1">{daysUntilBirthday}</span>
+            days
+          </h2>
+          <span className="mx-auto">until birthday</span>
+        </div> */}
       </div>
     </div>
   );

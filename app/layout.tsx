@@ -6,6 +6,7 @@ import Header from "@/components/layouts/header";
 import { Footer } from "@/components/layouts/footer";
 import Image from "next/image";
 import Analytics from "@/components/misc/Analytics";
+import gradient from "@/public/gradient.webp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -63,10 +64,8 @@ export default function RootLayout({
             </div>
             <Footer />
             <Image
-              width={1512}
-              height={550}
               className="absolute left-0 md:left-1/2 top-0 -z-10 -translate-x-1/2 scale-150 md:scale-100 object-cover w-full md:w-auto"
-              src="/gradient.webp"
+              src={gradient}
               alt="Gradient background"
               priority
             />

@@ -13,4 +13,4 @@ export async function GET() {
     : new Response(undefined, { status: 500 });
 }
 
-export const revalidate = 60;
+export const dynamic = 'force-dynamic'

@@ -16,8 +16,10 @@ export function capitalize(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-export async function json(...args: Parameters<typeof fetch>) {
-  const response = await fetch(...args);
-
-  return await response.json();
+export default async function fetcher<JSON = any>(
+  input: RequestInfo,
+  init?: RequestInit
+): Promise<JSON> {
+  const res = await fetch(input, init);
+  return res.json();
 }

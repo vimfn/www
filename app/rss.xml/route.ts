@@ -1,10 +1,11 @@
 import { getBlogPosts } from "@/lib/blog";
 import { NextResponse } from "next/server";
 import RSS from "rss";
+import { env } from "@/app/env";
 
 export const GET = () => {
   const SITE_URL =
-    process.env.NODE_ENV === "production"
+    env.NODE_ENV === "production"
       ? "http://localhost:3000"
       : "https://arnvgh.me";
 

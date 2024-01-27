@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 const EMOJI = [
   "🤹",
   "👀",
+  "🇮🇳",
   "⛺",
   "✨",
-  "🌈",
   "🌚",
   "🌱",
   "🌸",
@@ -33,8 +33,6 @@ const EMOJI = [
   "🪀",
   "🪁",
   "🪐",
-  "🏳️‍⚧️",
-  "🏳️‍🌈",
 ];
 
 function getRandomEmoji(exclude?: string) {
