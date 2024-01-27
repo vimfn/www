@@ -1,7 +1,9 @@
+import { env } from "@/app/env";
+
 const LASTFM_API = "https://ws.audioscrobbler.com/2.0";
 const MUSICBRAINZ_API = "https://musicbrainz.org/ws/2";
 const LASTFM_USERNAME = "arnvgh";
-const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${process.env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`;
+const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`;
 const MUSICBRAINZ_ENDPOINT = (mbid: string) => {
   return `${MUSICBRAINZ_API}/release/${mbid}?fmt=json`;
 };

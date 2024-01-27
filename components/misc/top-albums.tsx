@@ -1,8 +1,9 @@
+import { env } from "@/app/env";
 import { AlbumCard } from "@/components/misc/album-card";
 
 async function getData() {
   const res = await fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=arnvgh&period=1month&api_key=${process.env.LASTFM_API_TOKEN}&format=json`
+    `http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=arnvgh&period=1month&api_key=${env.LASTFM_API_TOKEN}&format=json`
   );
 
   if (!res.ok) {

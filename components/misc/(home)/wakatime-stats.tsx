@@ -1,3 +1,4 @@
+import { env } from "@/app/env";
 import { Code2 } from "lucide-react";
 import { unstable_cache as cache } from "next/cache";
 
@@ -28,9 +29,9 @@ const getCodingHrs = cache(
       "https://wakatime.com/api/v1/users/current/all_time_since_today",
       {
         headers: {
-          Authorization: `Basic ${Buffer.from(
-            process.env.WAKATIME_API_KEY as string
-          ).toString("base64")}`,
+          Authorization: `Basic ${Buffer.from(env.WAKATIME_API_KEY).toString(
+            "base64"
+          )}`,
         },
       }
     );
