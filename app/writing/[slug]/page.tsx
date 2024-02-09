@@ -48,7 +48,11 @@ export async function generateMetadata({
   };
 }
 
-export default function Blog({ params }: { params: { slug: string } }) {
+export default function Blog({
+  params,
+}: {
+  readonly params: { slug: string };
+}) {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {
