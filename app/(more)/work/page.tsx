@@ -37,7 +37,7 @@ const workPage = () => {
             rel="noopener noreferrer"
           >
             @arnvgh
-          </a>
+          </a>{""}
           .
         </p>
       </div>

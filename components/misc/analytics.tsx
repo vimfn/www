@@ -2,7 +2,7 @@ import Script from "next/script";
 import React from "react";
 import { env } from "@/app/env";
 
-const Analytics = () => {
+export const Analytics = () => {
   return (
     <>
       {env.NODE_ENV === "production" && (
@@ -15,5 +15,3 @@ const Analytics = () => {
     </>
   );
 };
-
-export default Analytics;

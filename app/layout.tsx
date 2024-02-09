@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/misc/theme-provider";
 import Header from "@/components/layouts/header";
 import { Footer } from "@/components/layouts/footer";
 import Image from "next/image";
-import Analytics from "@/components/misc/Analytics";
+import { Analytics } from "@/components/misc/analytics";
 import gradientImg from "@/public/gradient.webp";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 };
 
 interface ChildrenProps {
-  readonly children:  React.ReactNode;
+  readonly children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: ChildrenProps) {
