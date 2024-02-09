@@ -10,7 +10,7 @@ import {
   EverydayTab,
   SoftwareTab,
   WebsiteTab,
-} from "@/components/misc/uses-tabs-comps";
+} from "@/components/misc/(uses)/uses-tabs-comps";
 
 type TabKey =
   | "all"

@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { Colophon } from "@/components/misc/colophon";
-import Typography from "@/components/misc/typography";
-import { DesignAndColors } from "@/components/misc/design-colors";
-import MyLogo from "@/components/misc/my-logo";
+
+import { Colophon } from "@/components/misc/(uses)/colophon";
+import Typography from "@/components/misc/(uses)/typography";
+import { DesignAndColors } from "@/components/misc/(uses)/design-colors";
+import MyLogo from "@/components/misc/(uses)/my-logo";
 
 export const AllTabs = () => {
   return (
@@ -31,7 +32,7 @@ const EverydayTabData = [
   },
   {
     key: "Old Laptop",
-    desc: "HP Laptop 15s running Ubuntu Server (yes, I kind of made it a homelab :P)",
+    desc: "HP Laptop 15s running Ubuntu Server (yes, I kind of made it a homelab)",
   },
   {
     key: "Secondary Monitor",
@@ -199,7 +200,7 @@ export const CodingTab = () => {
 
       <div className="pb-5">
         I use Neovim for simple text edits or writing blogs, and VSCodium with
-        Vim Extension (
+        Vim Extension ({""}
         <a
           href="https://gist.github.com/arnvgh/32e28c0d699a6685017a5e2ba606e1ab"
           target="_blank"
@@ -208,8 +209,8 @@ export const CodingTab = () => {
         >
           Settings
         </a>
-        ) for web and most of my other projects, for python related stuff I use
-        PyCharm cause of Pylance compalibitly issues with VSCodium.
+        {""}) for web and most of my other projects, for python related stuff I
+        use PyCharm cause of Pylance compalibitly issues with VSCodium.
       </div>
 
       <div>
@@ -240,7 +241,7 @@ export const WebsiteTab = () => {
         >
           GitHub
         </a>
-        .
+        {""}.
       </p>
       <Colophon />
       <h1 className="text-xl font-bold py-5">Typography</h1>
