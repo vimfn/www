@@ -60,8 +60,8 @@ dependencies:
     specifier: ^0.323.0
     version: 0.323.0(react@18.2.0)
   million:
-    specifier: ^3.0.2
-    version: 3.0.2
+    specifier: ^3.0.3
+    version: 3.0.3
   next:
     specifier: 14.1.0
     version: 14.1.0(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
@@ -4233,8 +4233,8 @@ packages:
       braces: 3.0.2
       picomatch: 2.3.1
 
-  /million@3.0.2:
-    resolution: {integrity: sha512-qOYPx2M+zxDn3oq4oVubiRtD9KL9cMad/f6Vs8V03FfocKfV6AV8fIYzD8I2vvNc2h9jIbVnUIU7QspbYrzTsw==}
+  /million@3.0.3:
+    resolution: {integrity: sha512-fuFF18eBfAQy/+0EnZbqi7lVyJqT0EISboz9bG5tKG0Be3KL2chG4cCp2Bv9wdU6WXI4RZ4mh1gtR4ZPoGn1Vw==}
     hasBin: true
     dependencies:
       '@babel/core': 7.23.7
