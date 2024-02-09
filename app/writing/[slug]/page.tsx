@@ -5,8 +5,9 @@ import { getBlogPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/format-date";
 
 export async function generateMetadata({
-  //@ts-ignore
   params,
+}: {
+  params: { slug: string };
 }): Promise<Metadata | undefined> {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
   if (!post) {
@@ -47,8 +48,7 @@ export async function generateMetadata({
   };
 }
 
-//@ts-ignore
-export default function Blog({ params }) {
+export const Blog = ({ params }: { params: { slug: string } }) => {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {
@@ -92,4 +92,4 @@ export default function Blog({ params }) {
       </article>
     </section>
   );
-}
+};
