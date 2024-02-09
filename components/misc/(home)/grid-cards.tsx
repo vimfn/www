@@ -9,7 +9,7 @@ import {
   WakatimeStats,
 } from "@/components/misc/(home)/cards";
 
-const GridCards = () => {
+export const GridCards = () => {
   return (
     <div>
       <div className="grid md:grid-cols-6 grid-cols-3 mt-8 gap-3">
@@ -42,5 +42,3 @@ const GridCards = () => {
     </div>
   );
 };
-
-export default GridCards;

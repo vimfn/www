@@ -1,4 +1,4 @@
-const Intro = () => {
+export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <p>
@@ -21,7 +21,7 @@ const Intro = () => {
         ></path>
       </svg>
       <div>
-        That&apos;s it. Feel free to reach me out at
+        That&apos;s it. Feel free to reach me out at{" "}
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
           href="http://x.com/arnvgh"
@@ -29,7 +29,7 @@ const Intro = () => {
           rel="noopener noreferrer"
         >
           @arnvgh
-        </a>
+        </a>{" "}
         or
         <a
           className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
@@ -37,10 +37,8 @@ const Intro = () => {
         >
           arnvgh@gmail.com
         </a>
-        .
+        {""}.
       </div>
     </section>
   );
 };
-
-export default Intro;
