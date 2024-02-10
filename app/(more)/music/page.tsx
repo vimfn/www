@@ -1,5 +1,5 @@
-import { LatestSong } from "@/components/misc/latest-song";
-import TopAblums from "@/components/misc/top-albums";
+import { LatestSong } from "@/components/misc/(music)/latest-song";
+import TopAblums from "@/components/misc/(music)/top-albums";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,13 +12,13 @@ const MusicPage = () => {
     <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Music</h1>
-        Music has always been something near to my heart. Whether it&apos;s a
-        happy day or a sad one, there is a memory linked with it, and a song
-        that accompanies the moment.
-        <br />
-        <br />
         <p>
-          You can find a screencast my 2023 Spotify wrapped
+          Music has always been something near to my heart. Whether it&apos;s a
+          happy day or a sad one, there is a memory linked with it, and a song
+          that accompanies the moment.
+        </p>
+        <p>
+          You can find a screencast my 2023 Spotify wrapped{""}
           <a
             href="https://files.arnvgh.me/r/2023_Spotify_Wrapped.mkv"
             className="link ml-1"
@@ -26,7 +26,7 @@ const MusicPage = () => {
           >
             here
           </a>
-          .
+          {""}.
         </p>
       </div>
       <LatestSong className="min-w-0 max-w-full" />

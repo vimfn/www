@@ -225,10 +225,56 @@ export const CodingTab = () => {
   );
 };
 
+const InspirationsList = [
+  {
+    title: "leerob.io",
+    link: "https://leerob.io",
+  },
+  {
+    title: "zenorocha.com",
+    link: "https://zenorocha.com/",
+  },
+  {
+    title: "ped.ro",
+    link: "https://ped.ro/",
+  },
+  {
+    title: "delba.dev",
+    link: "https://delba.dev/",
+  },
+  {
+    title: "honghong.me",
+    link: "https://honghong.me",
+  },
+  {
+    title: "anishde.dev",
+    link: "https://anishde.dev/",
+  },
+  {
+    title: "ui.aceternity.com",
+    link: "https://ui.aceternity.com/",
+  },
+];
+
 export const WebsiteTab = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold pt-8">Website</h1>
+      <div>
+        <h1 className="text-xl font-bold py-5">Inspirations</h1>
+        <p>
+          Thanks to these awesome websites for inspiring me to build this site.
+        </p>
+        <ul className="list-disc mx-4 mt-6">
+          {InspirationsList.map(({ title, link }) => (
+            <li key={link}>
+              <a className="link" target="_blank" href="https://leerob.io">
+                {title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
       <h1 className="text-xl font-bold py-5">Tech Stack</h1>
       <p>
         This website is created with Next.js, Tailwind CSS, MDX, Umami, and

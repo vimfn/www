@@ -6,10 +6,10 @@ import type { Transition, Variants } from "framer-motion";
 import { AnimatePresence, motion } from "framer-motion";
 import type { ComponentProps } from "react";
 import { useMemo } from "react";
-import { Skeleton } from "../utils/Skeleton";
-import { useLatestSong } from "../../hooks/use-latest-song";
+import { Skeleton } from "../../utils/Skeleton";
+import { useLatestSong } from "../../../hooks/use-latest-song";
 import { capitalize } from "@/lib/utils";
-import { IconMusic } from "../icons";
+import { IconMusic } from "../../icons";
 
 const variants: Variants = {
   hidden: {

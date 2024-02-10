@@ -1,5 +1,5 @@
 import { env } from "@/app/env";
-import { AlbumCard } from "@/components/misc/album-card";
+import { AlbumCard } from "@/components/misc/(music)/album-card";
 
 async function getData() {
   const res = await fetch(
