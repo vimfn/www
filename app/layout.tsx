@@ -68,10 +68,15 @@ export default function RootLayout({ children }: ChildrenProps) {
               src={gradientImg}
               role="presenation"
               alt="Gradient background"
-              placeholder="blur"
               priority
             />
           </div>
+          <noscript>
+            <p className="bg-yellow-200 mx-auto text-center p-2">
+              JavaScript is disabled. Some functionalities might not work
+              properly.
+            </p>
+          </noscript>
         </ThemeProvider>
       </body>
       <Analytics />
