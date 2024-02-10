@@ -1,4 +1,4 @@
-import { LatestBook } from "@/components/misc/latest-book";
+import { LatestBook } from "@/components/misc/(book)/latest-book";
 import { booksData } from "./books";
 import { Metadata } from "next";
 
@@ -17,7 +17,7 @@ const booksPage = () => {
           Aside from reading many lines of code, errors, and pages of
           documentation, when I find some time or feel like delving into a topic
           in depth, I often turn to books for their excellent in-depth
-          explanations.
+          explanations and often fun.
         </p>
         <p className="mb-6">
           If it is not something related to my work, or a mystery or sci-fi
@@ -27,7 +27,9 @@ const booksPage = () => {
         {booksData.map(
           (book) => book.readingNow && <LatestBook key={book.url} {...book} />
         )}
-        <p className="mt-6">Below are some of my favorite collections of various authors.</p>
+        <p className="mt-6">
+          Below are some of my favorite collections of various authors.
+        </p>
         <div className="mt-8 grid md:grid-cols-2 gap-8">
           {booksData.map(
             (book) =>
