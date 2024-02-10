@@ -268,21 +268,6 @@ export const WebsiteTab = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold pt-8">Website</h1>
-      <div>
-        <h1 className="text-xl font-bold py-5">Inspirations</h1>
-        <p>
-          Thanks to these awesome websites for inspiring me to build this site.
-        </p>
-        <ul className="list-disc mx-4 mt-6">
-          {InspirationsList.map(({ title, link }) => (
-            <li key={link}>
-              <a className="link" target="_blank" href="https://leerob.io">
-                {title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
       <h1 className="text-xl font-bold py-5">Tech Stack</h1>
       <p>
         This website is created with Next.js, Tailwind CSS, MDX, Umami, and
@@ -298,6 +283,21 @@ export const WebsiteTab = () => {
         {""}.
       </p>
       <Colophon />
+      <div>
+        <h1 className="text-xl font-bold py-5">Inspirations</h1>
+        <p>
+          Thanks to these awesome websites for inspiring me to build this site.
+        </p>
+        <ul className="list-disc mx-4 mt-6">
+          {InspirationsList.map(({ title, link }) => (
+            <li key={link}>
+              <a className="link" target="_blank" href={link}>
+                {title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
       <h1 className="text-xl font-bold py-5">Typography</h1>
       <p className="pb-5">
         For the website typography, I am using Inter for most of the content and
