@@ -138,18 +138,18 @@ export const SoftwareTab = () => {
 };
 
 const BrowserTabData = [
-  {
-    desc: "Chromium Web Store",
-  },
+  // {
+  //   desc: "Chromium Web Store",
+  // },
   {
     desc: "OneTab",
   },
   {
     desc: "Dark Reader",
   },
-  {
-    desc: "JSON Viewer",
-  },
+  // {
+  //   desc: "JSON Viewer",
+  // },
   {
     desc: "uBlock Origin",
   },
@@ -165,9 +165,9 @@ const BrowserTabData = [
   {
     desc: "Unhook",
   },
-  {
-    desc: "Google Docs Offline",
-  },
+  // {
+  //   desc: "Google Docs Offline",
+  // },
 ];
 
 export const BrowserTab = () => {
@@ -177,8 +177,9 @@ export const BrowserTab = () => {
         <h1 className="text-2xl font-bold py-8">Browser</h1>
 
         <div className="pb-5">
-          I use <code>ungoogled-chromium</code> along with the following
-          extensions:
+          I use <code>firefox-developer-edition</code> as my primary browser,
+          and <code>ungoogled-chromium</code> as my secondary browser, along
+          with following extensions:
         </div>
       </div>
       {BrowserTabData.map((data, i) => (
@@ -245,6 +246,10 @@ const InspirationsList = [
   {
     title: "honghong.me",
     link: "https://honghong.me",
+  },
+  {
+    title: "ui.shadcn.com",
+    link: "https://ui.shadcn.com/",
   },
   {
     title: "anishde.dev",

@@ -18,9 +18,20 @@ const pinsPage = () => {
     <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">FAQs</h1>
-        I've gathered some commonly asked questions here to save time for both
-        of us. If you have any other inquiries, feel free to reach out to me at
-        @arnvgh. Thanks!
+        <p>
+          I've gathered some commonly asked questions here to save time for both
+          of us. If you have any other inquiries, feel free to reach out to me
+          at{" "}
+          <a
+            href="http://x.com/arnvgh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            @arnvgh
+          </a>
+          {""}. Thanks!
+        </p>
       </div>
 
       {faqs.map((faq, i) => (

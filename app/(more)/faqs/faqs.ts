@@ -1,9 +1,9 @@
-export interface faq {
+export interface FaqTypes {
   question: string;
   answer: string;
 }
 
-export const faqs: faq[] = [
+export const faqs: FaqTypes[] = [
   {
     question: "What does your name mean?",
     answer:
