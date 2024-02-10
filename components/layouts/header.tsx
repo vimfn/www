@@ -1,4 +1,4 @@
-import ThemeSwitch from "@/components/misc/theme-switch";
+import ThemeSwitch from "@/components/misc/(theme)/theme-switch";
 import Navbar from "@/components/nav/navbar";
 
 const Header = () => {

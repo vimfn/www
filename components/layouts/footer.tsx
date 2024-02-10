@@ -8,7 +8,7 @@ function getLatestCommit() {
   return label;
 }
 
-export function Footer({ className, ...props }: ComponentProps<"footer">) {
+export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
   const commit = getLatestCommit();
   const year = String(new Date().getFullYear());
 
@@ -27,7 +27,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
           <time className="hidden sm:inline" dateTime={String(year)}>
             {year}{" "}
           </time>
-          <span className="text-zinc-300 dark:text-zinc-600">—</span> he
+          <span className="text-zinc-300 dark:text-zinc-600">—</span> he{" "}
           <span className="text-zinc-300 dark:text-zinc-600">/</span>him
         </span>
         <a
@@ -39,7 +39,6 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
           <svg
             className="translate-y-px"
             height="22"
-            role="presentation"
             width="22"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -60,4 +59,4 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
       </div>
     </footer>
   );
-}
+};

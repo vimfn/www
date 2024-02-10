@@ -15,12 +15,12 @@ import {
 
 import Image from "next/image";
 
-import work from "@/public/images/work.webp";
-import books from "@/public/images/books.webp";
-import anime from "@/public/images/anime.webp";
-import music from "@/public/images/music.webp";
-import faqs from "@/public/images/faqs.webp";
-import uses from "@/public/images/uses.webp";
+import work from "@/public/images/(nav)/work.webp";
+import books from "@/public/images/(nav)/books.webp";
+import anime from "@/public/images/(nav)/anime.webp";
+import music from "@/public/images/(nav)/music.webp";
+import faqs from "@/public/images/(nav)/faqs.webp";
+import uses from "@/public/images/(nav)/uses.webp";
 import NavDrawer from "./nav-drawer";
 
 export function NavMenu() {

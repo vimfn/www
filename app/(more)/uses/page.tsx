@@ -1,4 +1,4 @@
-import { UsesTabs } from "@/components/misc/uses-tab";
+import { UsesTabs } from "@/components/misc/(uses)/uses-tab";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {

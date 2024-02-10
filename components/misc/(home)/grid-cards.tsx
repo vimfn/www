@@ -1,18 +1,20 @@
-import DCStatus from "@/components/misc/(home)/dc-status";
-import GHStats from "@/components/misc/(home)/gh-stats";
-import { PlacesCard } from "@/components/misc/(home)/places-card";
-import Map from "./map";
-import { Time } from "./time";
-import WakatimeStats from "./wakatime-stats";
-import AnimeCard from "./anime-card";
-import StacksCard from "./stacks-card";
+import {
+  AnimeLinkCard,
+  CurrentTime,
+  DCStatus,
+  GHStats,
+  ImagesCard,
+  LocateMe,
+  StacksCard,
+  WakatimeStats,
+} from "@/components/misc/(home)/cards";
 
-const GridCards = () => {
+export const GridCards = () => {
   return (
     <div>
       <div className="grid md:grid-cols-6 grid-cols-3 mt-8 gap-3">
         <div className="col-span-3">
-          <PlacesCard />
+          <ImagesCard />
         </div>
         <div className="col-span-2">
           <GHStats />
@@ -22,14 +24,14 @@ const GridCards = () => {
 
       <div className="grid md:grid-cols-6 grid-cols-3 gap-3 mt-3">
         <div className="col-span-2 md:order-1 order-2">
-          <Map />
+          <LocateMe />
         </div>
         <div className="col-span-1 order-2">
-          <AnimeCard />
+          <AnimeLinkCard />
         </div>
         <div className="md:order-2 order-1">
           <div className="flex flex-col gap-3">
-            <Time />
+            <CurrentTime />
             <WakatimeStats />
           </div>
         </div>
@@ -40,5 +42,3 @@ const GridCards = () => {
     </div>
   );
 };
-
-export default GridCards;

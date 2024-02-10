@@ -20,11 +20,11 @@ const writingPage = () => {
           <h1 className="text-2xl font-bold pb-8">Writing</h1>
           <p>
             Programming, Computers, Linux, and occasional life insights.
-            Subscribe to
+            Subscribe to{" "}
             <a className="link mx-1 items-center" href={"/rss.xml"}>
               RSS
               <Rss className="inline-flex mb-1 ml-1" size={16} />
-            </a>
+            </a>{" "}
             or follow on
             <a
               href="https://x.com/arnvgh"
@@ -32,13 +32,13 @@ const writingPage = () => {
               className="link mx-1"
             >
               Twitter
-            </a>
+            </a>{" "}
             for updates.
           </p>
         </div>
 
         {allBlogs
-          .sort((a, b) => {
+          .toSorted((a, b) => {
             if (
               new Date(a.metadata.publishedAt) >
               new Date(b.metadata.publishedAt)
@@ -64,9 +64,7 @@ const writingPage = () => {
                   </div>
                   <div className="flex items-center mt-2 sm:mt-0  justify-between">
                     <p className="text-xs text-left sm:text-right md:mb-0 mr-2 ml-8 sm:ml-0 text-text/70">
-                      <time>
-                        {extractDate(post.metadata.publishedAt as string)}
-                      </time>
+                      <time>{extractDate(post.metadata.publishedAt)}</time>
                     </p>
                   </div>
                 </div>
