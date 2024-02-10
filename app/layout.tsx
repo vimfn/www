@@ -74,12 +74,12 @@ export default function RootLayout({ children }: ChildrenProps) {
       </body>
       <Analytics />
       <link
-        href="/favicon-light.ico"
+        href="/favicons/favicon-light.ico"
         rel="icon"
         media="(prefers-color-scheme: light)"
       />
       <link
-        href="/favicon-dark.ico"
+        href="/favicons/favicon-dark.ico"
         rel="icon"
         media="(prefers-color-scheme: dark)"
       />
