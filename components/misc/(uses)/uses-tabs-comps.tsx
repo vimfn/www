@@ -1,15 +1,18 @@
 import Image from "next/image";
 
 import { Colophon } from "@/components/misc/(uses)/colophon";
-import Typography from "@/components/misc/(uses)/typography";
+import { Typography } from "@/components/misc/(uses)/typography";
 import { DesignAndColors } from "@/components/misc/(uses)/design-colors";
-import MyLogo from "@/components/misc/(uses)/my-logo";
+import { MyLogo } from "@/components/misc/(uses)/my-logo";
+
+import bspwmImg from "@/public/images/(uses)/bspwm.webp";
 
 export const AllTabs = () => {
   return (
     <section className="border-none">
       <Image
-        src="/images/bspwm.webp"
+        src={bspwmImg}
+        placeholder="blur"
         alt={"Desk setup in early 2023"}
         width={1920}
         height={1080}

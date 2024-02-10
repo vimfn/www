@@ -1,6 +1,6 @@
 import React from "react";
 
-const MyLogo = () => {
+export const MyLogo = () => {
   return (
     <div className="py-5 select-none">
       <div className="grid grid-cols-2 items-center place-items-center border border-collapse">
@@ -15,4 +15,3 @@ const MyLogo = () => {
   );
 };
 
-export default MyLogo;

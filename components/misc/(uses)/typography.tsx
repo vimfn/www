@@ -5,7 +5,7 @@ const Kaisei = Kaisei_Tokumin({
   weight: "500",
 });
 
-const Typography = () => {
+export const Typography = () => {
   return (
     <div>
       <div className="grid md:grid-cols-2 grid-cols-1 items-center place-items-center border border-dashed border-collapse">
@@ -33,5 +33,3 @@ const Typography = () => {
     </div>
   );
 };
-
-export default Typography;
