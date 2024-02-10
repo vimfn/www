@@ -7,8 +7,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { ComponentProps } from "react";
 import { useMemo } from "react";
 import { Skeleton } from "@/components/utils/Skeleton";
-import { useLatestFilm } from "../../hooks/use-latest-film";
 import { capitalize } from "@/lib/utils";
+import { useLatestFilm } from "@/hooks/use-latest-film";
 
 const variants: Variants = {
   hidden: {
