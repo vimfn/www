@@ -6,7 +6,7 @@ import type { Transition, Variants } from "framer-motion";
 import { AnimatePresence, motion } from "framer-motion";
 import type { ComponentProps } from "react";
 import { useMemo } from "react";
-import { Skeleton } from "@/components/utils/Skeleton";
+import { Skeleton } from "@/components/utils/skeleton";
 import { capitalize } from "@/lib/utils";
 import { useLatestFilm } from "@/hooks/use-latest-film";
 

@@ -22,7 +22,7 @@ export const AnimeCard = ({
     >
       <div
         className="transition duration-300 ease-in-out rounded-md bg-cover absolute w-full h-full group-hover:opacity-40"
-        style={{ backgroundImage: `url('/anime/${imgName}.webp')` }}
+        style={{ backgroundImage: `url('/images/(anime)/${imgName}.webp')` }}
       ></div>
       <div className="transition duration-300 ease-in-out opacity-0 group-hover:opacity-100 ml-0 sm:ml-4 z-40 text-2xl my-auto font-bold">
         <div>{title}</div> {altTitleElement}

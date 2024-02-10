@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import animePic from "@/public/images/anime.webp";
+import animePic from "@/public/images/(nav)/anime.webp";
 import { ArrowUpRight } from "lucide-react";
 
 export const AnimeLinkCard = () => {

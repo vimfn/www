@@ -6,7 +6,7 @@ import Header from "@/components/layouts/header";
 import { Footer } from "@/components/layouts/footer";
 import Image from "next/image";
 import { Analytics } from "@/components/misc/analytics";
-import gradientImg from "@/public/gradient.webp";
+import gradientImg from "@/public/images/gradient.webp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,7 @@ const info = {
   twitter: "@arnvgh",
   description: "19yo Software Engineer, India",
   url: "https://arnvgh.me",
-  image: "/meta.png",
+  image: "/meta/meta.png",
 };
 
 export const metadata: Metadata = {
@@ -66,7 +66,9 @@ export default function RootLayout({ children }: ChildrenProps) {
             <Image
               className="absolute left-0 md:left-1/2 top-0 -z-10 -translate-x-1/2 scale-150 md:scale-100 object-cover w-full md:w-auto"
               src={gradientImg}
+              role="presenation"
               alt="Gradient background"
+              placeholder="blur"
               priority
             />
           </div>

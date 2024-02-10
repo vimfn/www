@@ -15,7 +15,7 @@ export const GET = () => {
     site_url: `${SITE_URL}`,
     feed_url: `${SITE_URL}/rss.xml`,
     language: "en-US",
-    image_url: `${SITE_URL}/og.png`,
+    image_url: `${SITE_URL}/meta/og.png`,
   });
 
   const posts = getBlogPosts();
