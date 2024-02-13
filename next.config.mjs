@@ -15,6 +15,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/sponsor",
+        destination: "https://github.com/sponsors/arnvgh",
+        permanent: true,
+      },
+      {
         source: "/github/:slug*",
         destination: "https://github.com/arnvgh/:slug*",
         permanent: true,
