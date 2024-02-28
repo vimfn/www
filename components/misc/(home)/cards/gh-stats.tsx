@@ -45,11 +45,11 @@ const BackgroundPattern = () => {
     return x - Math.floor(x);
   }
   const colours = ["#39d353", "#0e4429", "#006d32", "#161b22"];
-  const days = new Array(51)
+  const days = new Array(61)
     .fill(null)
     .map((_) => colours[Math.floor(seededRandom() * colours.length)]);
   return (
-    <div className="absolute top-0 z-1 grid grid-cols-12 grid-rows-12 gap-1">
+    <div className="absolute top-0 z-1 grid grid-cols-12 grid-rows-[24] gap-1">
       {days.map((c, i) => (
         <div
           key={c}

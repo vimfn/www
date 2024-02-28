@@ -27,7 +27,7 @@ export const ImagesCard = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full md:max-w-xs h-36"
+      className="w-full h-36 rounded-lg"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -37,7 +37,7 @@ export const ImagesCard = () => {
             <Image
               src={img1}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs "
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
               priority
             />
@@ -48,7 +48,7 @@ export const ImagesCard = () => {
             <Image
               src={img2}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
             />
           </div>
@@ -58,7 +58,7 @@ export const ImagesCard = () => {
             <Image
               src={img3}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
             />
           </div>
@@ -68,7 +68,7 @@ export const ImagesCard = () => {
             <Image
               src={img4}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
             />
           </div>
@@ -78,7 +78,7 @@ export const ImagesCard = () => {
             <Image
               src={img5}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
             />
           </div>
@@ -88,7 +88,7 @@ export const ImagesCard = () => {
             <Image
               src={img6}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
             />
           </div>
@@ -98,7 +98,7 @@ export const ImagesCard = () => {
             <Image
               src={img7}
               alt=""
-              className="rounded-lg object-cover h-36 w-full md:max-w-xs"
+              className="rounded-lg object-cover h-36 w-full "
               placeholder="blur"
             />
           </div>

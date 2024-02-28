@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
@@ -8,7 +10,10 @@ export const Intro = () => {
         </p>
         <p>
           A chess enthusiast and competitive programmer. I thrive in the Linux
-          and Vim ecosystem, embracing a terminal-centric lifestyle.
+          and Vim ecosystem, embracing a terminal-centric lifestyle.{" "}
+          <Link href="/about" className="link text-black dark:text-white/95">
+            Learn more.
+          </Link>
         </p>
       </div>
       <svg
