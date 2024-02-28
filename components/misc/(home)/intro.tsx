@@ -1,12 +1,16 @@
 export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
-      <p>
-        I design, craft and publish products of quality and reliability,
-        specializing in scalable real-time systems & networking. A chess
-        enthusiast and competitive programmer. I thrive in the Linux and Vim
-        ecosystem, embracing a terminal-centric lifestyle.
-      </p>
+      <div className="space-y-5">
+        <p>
+          I design, craft and publish products of quality and reliability,
+          specializing in scalable real-time systems & networking.
+        </p>
+        <p>
+          A chess enthusiast and competitive programmer. I thrive in the Linux
+          and Vim ecosystem, embracing a terminal-centric lifestyle.
+        </p>
+      </div>
       <svg
         aria-hidden="true"
         width="80"
@@ -29,7 +33,7 @@ export const Intro = () => {
           rel="noopener noreferrer"
         >
           @arnvgh
-        </a>{" "}
+        </a>
         or
         <a
           className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
