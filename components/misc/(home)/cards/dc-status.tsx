@@ -12,7 +12,7 @@ export const DCStatus = () => {
   );
 
   return (
-    <div className="bg-[#a5b4fc] dark:bg-[#313338] text-white rounded-lg items-center flex justify-center">
+    <div className="bg-[#a5b4fc] dark:bg-[#222222] text-white rounded-lg items-center flex justify-center">
       <div className="items-center gap-[0.35rem] flex justify-center -rotate-12">
         <DiscordLogoIcon />
         {error || (isLoading && <p>offline</p>)}

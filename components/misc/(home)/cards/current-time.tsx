@@ -30,7 +30,7 @@ export const CurrentTime = () => {
         <div
           className={cn(
             "flex flex-col justify-center items-center h-[4.125rem] rounded-lg text-white",
-            isNight ? "bg-[#001324]" : "bg-[#1793d1] "
+            !isNight ? "bg-[#dcd789] dark:bg-[#d1a189]" : "bg-[#a18ad4] "
           )}
         >
           <h2 className="font-bold text-base text-center">
