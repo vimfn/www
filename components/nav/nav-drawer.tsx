@@ -18,7 +18,7 @@ import faqs from "@/public/images/(nav)/faqs.webp";
 import uses from "@/public/images/(nav)/uses.webp";
 import { cn } from "@/lib/utils";
 import React from "react";
-import { ArrowUpRight, Github, Mail, Twitter } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Twitter } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 
 const NavDrawer = () => {
@@ -146,12 +146,12 @@ const NavDrawer = () => {
           </Button>
           <Button variant="secondary">
             <a
-              href="mailto:arnvgh@gmail.com"
+              href="https://www.linkedin.com/in/arnvgh/"
               rel="noopener noreferrer"
               className="h-full w-full"
             >
-              <Mail className="inline-flex mr-1 mb-1" size={15} />
-              Mail
+              <Linkedin className="inline-flex mr-1 mb-1" size={15} />
+              LinkedIn
             </a>
           </Button>
         </DrawerFooter>

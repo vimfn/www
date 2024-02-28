@@ -56,7 +56,7 @@ export const WakatimeStats = async () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="h-[4.125rem] flex flex-col justify-center items-center rounded-lg text-white bg-[#242938] dark:bg-[#222222]">
+      <div className="h-[4.125rem] flex flex-col justify-center items-center rounded-lg text-white bg-[#4a5c95]">
         <span className="font-semibold items-center">
           <Code2 className="inline-block mr-1 -mt-[0.15rem]" size={18} />
           {Math.round((seconds) / 3600)}

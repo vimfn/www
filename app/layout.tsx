@@ -64,7 +64,7 @@ export default function RootLayout({ children }: ChildrenProps) {
             </div>
             <Footer />
             <Image
-              className="absolute left-0 md:left-1/2 top-0 -z-10 -translate-x-1/2 scale-150 md:scale-100 object-cover w-full md:w-auto"
+              className="absolute left-0 md:left-1/2 top-0 -z-10 -translate-x-1/2 scale-150 object-cover w-full md:w-auto"
               src={gradientImg}
               role="presenation"
               alt="Gradient background"
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: ChildrenProps) {
             />
           </div>
           <noscript>
-            <p className="bg-yellow-200 mx-auto text-center p-2">
+            <p className="bg-yellow-100 mx-auto text-center p-2">
               JavaScript is disabled. Some functionalities might not work
               properly.
             </p>
