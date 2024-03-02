@@ -247,6 +247,14 @@ const InspirationsList = [
     link: "https://delba.dev/",
   },
   {
+    title: "jahir.dev",
+    link: "https://jahir.dev/",
+  },
+  {
+    title: "marcbouchenoire.com",
+    link: "https://marcbouchenoire.com/",
+  },
+  {
     title: "honghong.me",
     link: "https://honghong.me",
   },
