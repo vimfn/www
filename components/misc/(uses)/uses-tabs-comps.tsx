@@ -272,6 +272,14 @@ const InspirationsList = [
   },
 ];
 
+InspirationsList.sort((a, b) => {
+  const titleA = a.title.toLowerCase();
+  const titleB = b.title.toLowerCase();
+  if (titleA < titleB) return -1;
+  if (titleA > titleB) return 1;
+  return 0;
+});
+
 export const WebsiteTab = () => {
   return (
     <div>
@@ -294,7 +302,8 @@ export const WebsiteTab = () => {
       <div>
         <h1 className="text-xl font-bold py-5">Inspirations</h1>
         <p>
-          Thanks to these awesome websites for inspiring me to build this site.
+          Thanks to these awesome websites for inspiring me to build this site,
+          listed in alphabetical order.
         </p>
         <ul className="list-disc mx-4 mt-6">
           {InspirationsList.map(({ title, link }) => (
