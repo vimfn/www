@@ -1,3 +1,4 @@
+import { ArrowUpRight, MousePointerClick, Twitter } from "lucide-react";
 import Link from "next/link";
 
 export const Intro = () => {
@@ -11,8 +12,12 @@ export const Intro = () => {
         <p>
           A chess enthusiast and competitive programmer. I thrive in the Linux
           and Vim ecosystem, embracing a terminal-centric lifestyle.{" "}
-          <Link href="/about" className="link text-black dark:text-white/95">
-            Learn more.
+          <Link
+            href="/about"
+            className="inline-flex link text-black relative dark:text-white/95"
+          >
+            about me{" "}
+            <ArrowUpRight size={15} className="mt-1 ml-[2px] items-center" />
           </Link>
         </p>
       </div>
@@ -30,7 +35,7 @@ export const Intro = () => {
         ></path>
       </svg>
       <div>
-        That&apos;s it. Feel free to reach me out at{" "}
+        Feel free to reach me out at
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
           href="http://x.com/arnvgh"
