@@ -1,12 +1,11 @@
+// Ahh this file is so messy, TODO: Fix it, add error handling for getAlbumCover (trackCover ?)
+
 import { env } from "@/app/env";
+import { getAlbumCover } from "./get-album-cover";
 
 const LASTFM_API = "https://ws.audioscrobbler.com/2.0";
-const MUSICBRAINZ_API = "https://musicbrainz.org/ws/2";
 const LASTFM_USERNAME = "arnvgh";
 const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`;
-const MUSICBRAINZ_ENDPOINT = (mbid: string) => {
-  return `${MUSICBRAINZ_API}/release/${mbid}?fmt=json`;
-};
 
 type Boolean = "0" | "1";
 
@@ -59,10 +58,6 @@ interface LastFmResponse {
   recenttracks: RecentTracks;
 }
 
-interface MusicBrainzResponse {
-  date?: string;
-}
-
 export interface Response {
   artist: string;
   cover?: string;
@@ -87,24 +82,7 @@ export async function getLatestSong(): Promise<Response | undefined> {
 
     const song = response.recenttracks?.track?.[0];
     const date = song.date?.uts ? Number(song.date?.uts) : undefined;
-    const mbid = song.album.mbid;
     let year: number | undefined;
-
-    if (mbid) {
-      const release: MusicBrainzResponse = await fetch(
-        MUSICBRAINZ_ENDPOINT(mbid)
-      ).then((response) => {
-        if (!response.ok) return {};
-
-        return response.json();
-      });
-
-      if (release.date) {
-        const date = new Date(release.date);
-
-        year = date.getFullYear();
-      }
-    }
 
     return {
       title: song.name,
@@ -112,7 +90,11 @@ export async function getLatestSong(): Promise<Response | undefined> {
       year,
       date,
       url: song.url,
-      cover: song.image.find((image) => image.size === "large")?.["#text"],
+      cover: (
+        await getAlbumCover(
+          `track: ${song.name} artist: ${song.artist["#text"]}`
+        )
+      ).coverArt.url as string,
       playing: Boolean(song["@attr"]?.nowplaying) ?? !date,
     };
   } catch (error) {

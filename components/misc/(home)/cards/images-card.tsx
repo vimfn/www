@@ -20,6 +20,8 @@ import img4 from "@/public/images/(home)/0004.jpg";
 import img5 from "@/public/images/(home)/0005.jpg";
 import img6 from "@/public/images/(home)/0006.jpg";
 import img7 from "@/public/images/(home)/0007.jpg";
+import Link from "next/link";
+import { Pen } from "lucide-react";
 
 export const ImagesCard = () => {
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
@@ -27,23 +29,35 @@ export const ImagesCard = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full h-36 rounded-lg"
+      className="w-full h-72 rounded-lg bg-[#ece8e8] dark:bg-[#0f1319]"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        <CarouselItem className="h-36">
-          <div className="rounded-lg text-card-foreground">
-            <Image
-              src={img1}
-              alt=""
-              className="rounded-lg object-cover h-36 w-full "
-              placeholder="blur"
-              priority
-            />
-          </div>
+        <CarouselItem className="h-72 rounded-lg">
+          <Link href="/writing/2023">
+            <div className="rounded-lg text-card-foreground relative overflow-hidden">
+              <div className="flex-col text-3xl font-bold p-2 flex justify-start dark:text-white">
+                <p>A look back at 2023</p>
+                <span className="text-sm font-normal italic dark:text-white/75">
+                  rant about my 2024 goals • 3 min read
+                </span>
+              </div>
+              <div className="p-3">
+                <Image
+                  src={img1}
+                  alt=""
+                  className="rounded-lg object-cover w-full h-48"
+                  placeholder="blur"
+                  priority
+                />
+                
+              </div>
+            </div>
+          </Link>
         </CarouselItem>
-        <CarouselItem className="h-36">
+        ``
+        {/* <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
               src={img2}
@@ -102,10 +116,10 @@ export const ImagesCard = () => {
               placeholder="blur"
             />
           </div>
-        </CarouselItem>
+        </CarouselItem> */}
       </CarouselContent>
-      <CarouselPrevious className="absolute bottom-3 right-14" />
-      <CarouselNext className="absolute bottom-3 right-3" />
+      {/* <CarouselPrevious className="absolute bottom-3 right-14" />
+      <CarouselNext className="absolute bottom-3 right-3" /> */}
     </Carousel>
   );
 };
