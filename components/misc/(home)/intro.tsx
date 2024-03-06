@@ -1,4 +1,4 @@
-import { ArrowUpRight, MousePointerClick, Twitter } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export const Intro = () => {
