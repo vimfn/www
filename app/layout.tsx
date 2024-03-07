@@ -57,7 +57,7 @@ export default function RootLayout({ children }: ChildrenProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container max-w-3xl mx-auto min-h-screen flex flex-col px-4 py-5">
+          <div className="container max-w-2xl mx-auto min-h-screen flex flex-col px-4 py-5">
             <div className="flex-1">
               <Header />
               {children}

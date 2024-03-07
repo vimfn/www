@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 export const AnimeLinkCard = () => {
   return (
     <Link href={"/anime"}>
-      <div className="h-36 group rounded-lg relative hover:scale-95 duration-500 transform-gpu">
+      <div className="h-36 group rounded-lg relative">
         <Image
           className="absolute object-cover inset-0 w-full h-full -z-40 rounded-lg  dark:brightness-75"
           src={animePic}
