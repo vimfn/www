@@ -1,6 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
-
 export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
@@ -11,14 +8,7 @@ export const Intro = () => {
         </p>
         <p>
           A chess enthusiast and competitive programmer. I thrive in the Linux
-          and Vim ecosystem, embracing a terminal-centric lifestyle.{" "}
-          <Link
-            href="/about"
-            className="inline-flex link text-black relative dark:text-white/95"
-          >
-            about me{" "}
-            <ArrowUpRight size={15} className="mt-1 ml-[2px] items-center" />
-          </Link>
+          and Vim ecosystem, embracing a terminal-centric lifestyle.
         </p>
       </div>
       <svg
@@ -35,7 +25,7 @@ export const Intro = () => {
         ></path>
       </svg>
       <div>
-        Feel free to reach me out at
+        That&apos;s it. Feel free to reach me out at{" "}
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
           href="http://x.com/arnvgh"
