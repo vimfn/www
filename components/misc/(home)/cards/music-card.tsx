@@ -24,7 +24,7 @@ export const MusicCard = () => {
   }, [absoluteDate]);
   return (
     <Link
-      className="bg-[#000] h-36 text-white rounded-lg items-center flex justify-center relative overflow-hidden"
+      className="bg-[#000] h-36 text-white rounded-lg items-center flex justify-center relative overflow-hidden hover:scale-95 duration-500 transform-gpu"
       href="/music"
     >
       <ArcticonsLastfmscrobbler className="text-red-800 text-[50px] left-0 absolute top-0"/>

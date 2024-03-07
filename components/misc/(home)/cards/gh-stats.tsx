@@ -3,7 +3,7 @@ import { getGHStats } from "@/lib/get-gh-stats";
 export const GHStats = async () => {
   const { issues, prs, followers, stars } = await getGHStats();
   return (
-    <div className="bg-[#f7f2f2] dark:bg-[#0d1117] rounded-lg h-36 relative group">
+    <div className="bg-[#f7f2f2] dark:bg-[#0d1117] rounded-lg h-36 relative group hover:scale-95 duration-500 transform-gpu">
       <a
         href="http://github.com/arnvgh"
         target="_blank"
