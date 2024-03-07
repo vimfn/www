@@ -10,25 +10,28 @@ import {
 } from "@/components/misc/(home)/cards";
 import LinksCard from "./cards/links-card";
 import { MusicCard } from "./cards/music-card";
+import GHLink from "./cards/gh-link";
+import ContactCard from "./cards/contact-card";
 
 export const GridCards = () => {
   return (
     <div>
       <div className="grid md:grid-cols-6 grid-cols-3 mt-8 gap-3">
-        <div className="col-span-3"></div>
+        <div className="col-span-3">
+          <GHLink />
+        </div>
         <div className="col-span-2">
           <GHStats />
         </div>
-        {/* <DCStatus /> */}
         <MusicCard />
       </div>
 
-      <div className="grid md:grid-cols-6 grid-cols-3 gap-3 mt-3">
-        {/* <div className="md:order-2 order-1"> */}
-        {/* <CurrentTime /> */}
+      <div className="grid md:grid-cols-6 grid-cols-3 mt-3">
+        {/* <div className="md:order-2 order-1">
+        <CurrentTime />
 
-        {/* </div> */}
-        {/* <LocateMe /> */}
+        <LocateMe />
+        </div> */}
         <div className="flex flex-col col-span-3">
           <div className="flex gap-3">
             <div className="w-24">
@@ -40,7 +43,7 @@ export const GridCards = () => {
             </div>
           </div>
 
-          <div className="cols-span-3">
+          <div className="cols-span-3 ">
             <StacksCard />
           </div>
         </div>
@@ -48,8 +51,13 @@ export const GridCards = () => {
         {/* <div className="col-span-1 order-2"> */}
         {/* </div>   */}
 
-        <div className="col-span-3">
-          <ImagesCard />
+        <div className="col-span-3 md:ml-3">
+          <div className="flex gap-3 ">
+            <DCStatus />
+
+            <ImagesCard />
+          </div>
+          <ContactCard />
         </div>
       </div>
     </div>

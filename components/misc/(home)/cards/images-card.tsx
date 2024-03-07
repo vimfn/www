@@ -36,29 +36,30 @@ export const ImagesCard = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full h-72 rounded-lg bg-[#f7f2f2] dark:bg-[#191919] dark:hover:bg-white/5"
+      className="w-full h-36 rounded-lg bg-[#f7f2f2] dark:bg-[#191919] dark:hover:bg-white/5"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        <CarouselItem className="h-72 rounded-lg group hover:scale-95 duration-500 transform-gpu">
+        <CarouselItem className=" rounded-lg group hover:scale-95 duration-500 transform-gpu">
           <Link href="/writing/2023">
             <div className="rounded-lg text-card-foreground relative overflow-hidden">
+              <h1>Recent Blogs</h1>
               <div className="flex-col text-2xl font-bold px-4  mt-3 flex justify-start dark:text-white">
                 <p>A look back at 2023</p>
-                <span className="text-sm font-normal text-[#a1a1aa]">
+                {/* <span className="text-sm font-normal text-[#a1a1aa]">
                   year review + goals for 2024 • 7 min read
-                </span>
+                </span> */}
               </div>
-              <div className="p-3 relative">
-                <Image
+              {/* <div className="p-3 relative"> */}
+                {/* <Image
                   src={img1}
                   alt=""
-                  className="rounded-lg object-cover w-full h-48"
+                  className="rounded-lg object-cover w-full h-20"
                   placeholder="blur"
                   priority
-                />
-              </div>
+                /> */}
+              {/* </div> */}
               {/* <ArrowUpRight className="absolute text-white transition-all group-hover:scale-105 bottom-4 left-4 border border-white bg-black rounded-full p-1" /> */}
             </div>
           </Link>
