@@ -1,5 +1,6 @@
 "use client";
 
+import { ArcticonsLastfmscrobbler } from "@/components/icons";
 import { useLatestSong } from "@/hooks/use-latest-song";
 import { capitalize } from "@/lib/utils";
 import { isYesterday, formatDistanceToNow } from "date-fns";
@@ -26,9 +27,13 @@ export const MusicCard = () => {
       className="bg-[#000] h-36 text-white rounded-lg items-center flex justify-center relative overflow-hidden"
       href="/music"
     >
+      <ArcticonsLastfmscrobbler className="text-red-800 text-[50px] left-0 absolute top-0"/>
       <div className="-rotate-90 text-white font-extrabold text-2xl mt-11 mb-10 ml-8">
         {absoluteDate ? (
-          <time className="truncate text-sm" dateTime={absoluteDate.toISOString()}>
+          <time
+            className="truncate text-sm"
+            dateTime={absoluteDate.toISOString()}
+          >
             {relativeDate}
           </time>
         ) : (
