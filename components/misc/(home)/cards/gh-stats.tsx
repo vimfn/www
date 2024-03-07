@@ -3,7 +3,7 @@ import { getGHStats } from "@/lib/get-gh-stats";
 export const GHStats = async () => {
   const { issues, prs, followers, stars } = await getGHStats();
   return (
-    <div className="bg-[#f7f2f2] dark:bg-[#0d1117] rounded-lg h-36 relative group">
+    <div className="bg-[#f7f2f2] dark:bg-[#0d1117] rounded-lg h-36 relative group hover:scale-95 duration-500 transform-gpu">
       <a
         href="http://github.com/arnvgh"
         target="_blank"
@@ -44,12 +44,12 @@ const BackgroundPattern = () => {
     const x = Math.sin(seed++) * 10000;
     return x - Math.floor(x);
   }
-  const colours = ["#39d353", "#0e4429", "#006d32", "#161b22"];
+  const colours = ["#39d353", "#0e4429","#0e4429", "#006d32", "#161b22"];
   const days = new Array(51)
     .fill(null)
     .map((_) => colours[Math.floor(seededRandom() * colours.length)]);
   return (
-    <div className="absolute top-0 z-1 grid grid-cols-12 grid-rows-12 gap-1">
+    <div className="top-0 z-1 grid grid-cols-12 grid-rows-12 gap-1">
       {days.map((c, i) => (
         <div
           key={c}
