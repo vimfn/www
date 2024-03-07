@@ -35,7 +35,7 @@ const ContactCard = () => {
   return (
     <div className=" mt-3 w-full h-[7.5rem] rounded-lg bg-[#f7f2f2] dark:bg-[#191919] dark:hover:bg-white/5">
       <p className=" ml-3 py-1 font-semibold text-[14px]">Leave a message</p>
-      <div className="">
+      <div className="mt-1">
         <form action={submitForm} className="px-2">
           <Input
             type="email"

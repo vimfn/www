@@ -23,3 +23,5 @@ export * from "./godot";
 export * from "./music";
 export * from "./lastfm";
 export * from "./vscode";
+export * from "./discord";
+export * from "./twitter";

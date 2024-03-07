@@ -44,15 +44,15 @@ export const ImagesCard = () => {
         <CarouselItem className=" rounded-lg group hover:scale-95 duration-500 transform-gpu">
           <Link href="/writing/2023">
             <div className="rounded-lg text-card-foreground relative overflow-hidden">
-              <h1>Recent Blogs</h1>
-              <div className="flex-col text-2xl font-bold px-4  mt-3 flex justify-start dark:text-white">
+              <h1 className="text-xl font-semibold px-3 my-2">Recent Blogs</h1>
+              <div className=" flex-col text-2xl font-bold underline px-4  mt-3 flex justify-start dark:text-white">
                 <p>A look back at 2023</p>
                 {/* <span className="text-sm font-normal text-[#a1a1aa]">
                   year review + goals for 2024 • 7 min read
                 </span> */}
               </div>
               {/* <div className="p-3 relative"> */}
-                {/* <Image
+              {/* <Image
                   src={img1}
                   alt=""
                   className="rounded-lg object-cover w-full h-20"
@@ -131,8 +131,8 @@ export const ImagesCard = () => {
           The React Framework – created and maintained by @vercel.
         </HoverCardContent>
       </HoverCard> */}
-      {/* <CarouselPrevious className="absolute bottom-3 right-14" />
-      <CarouselNext className="absolute bottom-3 right-3" /> */}
+      <CarouselPrevious className="absolute bottom-3 right-14" />
+      <CarouselNext className="absolute bottom-3 right-3" />
     </Carousel>
   );
 };
