@@ -41,7 +41,7 @@ export const ImagesCard = () => {
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        <CarouselItem className="h-72 rounded-lg group hover:scale-105 duration-500 transform-gpu">
+        <CarouselItem className="h-72 rounded-lg group hover:scale-95 duration-500 transform-gpu">
           <Link href="/writing/2023">
             <div className="rounded-lg text-card-foreground relative overflow-hidden">
               <div className="flex-col text-2xl font-bold px-4  mt-3 flex justify-start dark:text-white">
