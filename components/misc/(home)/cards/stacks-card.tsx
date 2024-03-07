@@ -100,37 +100,37 @@ const Marquee = (props: MarqueeProps) => {
 
 export const StacksCard = () => {
   return (
-    <div className="p-1 flex h-36 flex-col gap-2 overflow-hidden rounded-xl border bg-[#f7f2f2] dark:bg-inherit">
-      <p className="text-sm font-mono flex justify-center  text-zinc-600 dark:text-zinc-400">
+    <div className="p-1 flex h-36 flex-col gap-2 overflow-hidden rounded-xl mt-4">
+      {/* <p className="text-sm font-mono flex justify-center  text-zinc-600 dark:text-zinc-488">
         fun things
-      </p>
+      </p> */}
       <Marquee className="" fade pauseOnHover>
-        <IconTypescript width="40" height="40" />
-        <IconTailwindcss width="40" height="40" />
-        <IconNextJS width="40" height="40" />
-        <IconReactJS width="40" height="40" />
-        <IconPython width="40" height="40" />
-        <IconPostgres width="40" height="40" />
-        <VscodeIconsFileTypeCpp3 width="40" height="40" />
+        <IconTypescript width="48" height="48" />
+        <IconTailwindcss width="48" height="48" />
+        <IconNextJS width="48" height="48" />
+        <IconReactJS width="48" height="48" />
+        <IconPython width="48" height="48" />
+        <IconPostgres width="48" height="48" />
+        <VscodeIconsFileTypeCpp3 width="48" height="48" />
 
-        <SkillIconsGolang width="40" height="40" />
-        <SkillIconsGraphqlDark width="40" height="40" />
+        <SkillIconsGolang width="48" height="48" />
+        <SkillIconsGraphqlDark width="48" height="48" />
       </Marquee>
       <Marquee className="mt-2" reverse fade pauseOnHover>
-        <DeviconElixir width="40" height="40" />
-        <SkillIconsDocker width="40" height="40" />
-        <LogosArchlinux width="40" height="40" />
-        <SkillIconsGodotLight width="40" height="40" />
+        <DeviconElixir width="48" height="48" />
+        <SkillIconsDocker width="48" height="48" />
+        <LogosArchlinux width="48" height="48" />
+        <SkillIconsGodotLight width="48" height="48" />
 
-        <IconPrisma width="40" height="40" />
-        <IconMySQL width="40" height="40" />
-        <IconFirebase width="40" height="40" />
-        <IconFigma width="40" height="40" />
-        <IconGit width="40" height="40" />
-        <IconVite width="40" height="40" />
-        <IconCloudflare width="40" height="40" />
-        <IconJest width="40" height="40" />
-        <IconNodeJS width="40" height="40" />
+        <IconPrisma width="48" height="48" />
+        <IconMySQL width="48" height="48" />
+        <IconFirebase width="48" height="48" />
+        <IconFigma width="48" height="48" />
+        <IconGit width="48" height="48" />
+        <IconVite width="48" height="48" />
+        <IconCloudflare width="48" height="48" />
+        <IconJest width="48" height="48" />
+        <IconNodeJS width="48" height="48" />
       </Marquee>
     </div>
   );
