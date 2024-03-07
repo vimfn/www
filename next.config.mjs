@@ -2,16 +2,6 @@ import million from "million/compiler";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.scdn.co",
-        port: "",
-        pathname: "/**",
-      },
-    ],
-  },
   async redirects() {
     return [
       {
