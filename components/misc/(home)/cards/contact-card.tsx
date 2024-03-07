@@ -9,8 +9,8 @@ import { submitForm } from "@/actions/submit-form";
 
 const ContactCard = () => {
   return (
-    <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-      <div className=" mt-3 w-full h-[7.5rem] rounded-lg bg-[#f7f2f2] dark:bg-[#191919] dark:hover:bg-white/5">
+    <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900">
+      <div className=" mt-3 w-full h-[7.5rem] rounded-lg dark:bg-[#191919]">
         <p className=" ml-3 py-1 font-semibold text-[14px]">Leave a message</p>
         <div className="mt-1">
           <form action={submitForm} className="px-2">

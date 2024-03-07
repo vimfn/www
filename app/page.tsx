@@ -5,6 +5,7 @@ import {
 } from "@/components/ui/hover-card";
 import { Intro } from "@/components/misc/(home)/intro";
 import { GridCards } from "@/components/misc/(home)/grid-cards";
+import ContactCard from "@/components/misc/(home)/cards/contact-card";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       </div>
       <Intro />
       <GridCards />
+      <ContactCard />
     </section>
   );
 };

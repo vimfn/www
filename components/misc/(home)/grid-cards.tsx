@@ -57,7 +57,6 @@ export const GridCards = () => {
 
             <ImagesCard />
           </div>
-          <ContactCard />
         </div>
       </div>
     </div>
