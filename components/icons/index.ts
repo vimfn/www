@@ -22,3 +22,4 @@ export * from "./golang";
 export * from "./godot";
 export * from "./music";
 export * from "./lastfm";
+export * from "./vscode";
