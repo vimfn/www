@@ -8,6 +8,14 @@ import {
   StacksCard,
   WakatimeStats,
 } from "@/components/misc/(home)/cards";
+<<<<<<< HEAD
+import LinksCard from "./cards/links-card";
+import { MusicCard } from "./cards/music-card";
+import GHLink from "./cards/gh-link";
+import ContactCard from "./cards/contact-card";
+import BooksCard from "./cards/books-card";
+=======
+>>>>>>> main
 
 export const GridCards = () => {
   return (
@@ -35,8 +43,22 @@ export const GridCards = () => {
             <WakatimeStats />
           </div>
         </div>
+<<<<<<< HEAD
+
+        {/* <div className="col-span-1 order-2"> */}
+        {/* </div>   */}
+
+        <div className="col-span-3 md:ml-3">
+          <div className="flex gap-3 ">
+            <DCStatus />
+
+            <ImagesCard />
+          </div>
+          <BooksCard/>
+=======
         <div className="col-span-2">
           <StacksCard />
+>>>>>>> main
         </div>
       </div>
     </div>
