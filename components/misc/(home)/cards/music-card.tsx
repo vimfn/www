@@ -27,7 +27,7 @@ export const MusicCard = () => {
       className="bg-[#000] h-36 text-white rounded-lg items-center flex justify-center relative overflow-hidden hover:scale-95 duration-500 transform-gpu"
       href="/music"
     >
-      <ArcticonsLastfmscrobbler className="text-red-800 text-[50px] left-0 absolute top-0"/>
+      <ArcticonsLastfmscrobbler className="text-red-800 text-[50px] left-0 absolute top-0" />
       <div className="-rotate-90 text-white font-extrabold text-2xl mt-11 mb-10 ml-8">
         {absoluteDate ? (
           <time
@@ -54,7 +54,9 @@ export const MusicCard = () => {
       <Image
         src={cover!}
         alt={title!}
-        className="absolute rounded-full rotate-45 -bottom-10 -left-14 rounded-tl-full overflow-hidden"
+        className={`absolute rounded-full -bottom-10 -left-14 overflow-hidden ${
+          playing && "animate-slow-spin"
+        }`}
         width={200}
         height={200}
       />

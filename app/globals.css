@@ -102,6 +102,15 @@
   }
 }
 
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-slow-spin {
+  animation: spin 40s linear infinite;
+}
+
 /* html {
   min-width: 360px;
 } */
