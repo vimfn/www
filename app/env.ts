@@ -6,6 +6,10 @@ export const env = createEnv({
     LASTFM_API_TOKEN: z.string().length(32),
     GITHUB_TOKEN: z.string().startsWith("ghp_"),
     WAKATIME_API_KEY: z.string().min(1),
+    SPOTIFY_CLIENT_ID: z.string().min(1),
+    SPOTIFY_CLIENT_SECRET: z.string().min(1),
+    SPOTIFY_REFRESH_TOKEN: z.string().min(1),
+    DISCORD_WEBHOOK_URL: z.string().min(30),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),

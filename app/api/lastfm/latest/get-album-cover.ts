@@ -1,10 +1,12 @@
 // this is a workaround to get track cover from spotify if lastfm fails to get the image
 
+import { env } from "@/app/env";
+
 const ENDPOINT = "https://api.spotify.com/v1/search?q=";
 
-const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID as string;
-const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET as string;
-const REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN as string;
+const CLIENT_ID = env.SPOTIFY_CLIENT_ID as string;
+const CLIENT_SECRET = env.SPOTIFY_CLIENT_SECRET as string;
+const REFRESH_TOKEN = env.SPOTIFY_REFRESH_TOKEN as string;
 
 const BASIC = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64");
 

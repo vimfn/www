@@ -1,6 +1,7 @@
 "use server";
 
-const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL as string;
+const WEBHOOK_URL = env.DISCORD_WEBHOOK_URL as string;
+import { env } from "@/app/env";
 import { headers } from "next/headers";
 
 const Identifier = () => {
