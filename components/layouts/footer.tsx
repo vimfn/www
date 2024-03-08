@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import type { ComponentProps } from "react";
 import { Emoji } from "@/components/misc/emoji";
+import Link from "next/link";
 
 function getLatestCommit() {
   const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
@@ -20,6 +21,24 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
       )}
       {...props}
     >
+      <div className="italic  text-sm py-3 text-[#a1a1aa]">
+        PS: Made with {"<"}3 by{" "}
+        <a
+          className="link dark:text-white"
+          href="http://x.com/arnvgh"
+          target="_blank"
+        >
+          @arnvgh
+        </a>
+        , also checkout{" "}
+        <Link href="/stats" className="link dark:text-white">
+          stats
+        </Link>{" "}
+        and click on
+        <span className="dark:text-white"> more </span>
+        in the nav for other stuff.
+      </div>
+
       <hr className="w-full border-t border-zinc-150 dark:border-zinc-800" />
       <div className="flex items-center pt-2">
         <span>

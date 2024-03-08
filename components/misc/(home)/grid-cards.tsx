@@ -12,6 +12,7 @@ import LinksCard from "./cards/links-card";
 import { MusicCard } from "./cards/music-card";
 import GHLink from "./cards/gh-link";
 import ContactCard from "./cards/contact-card";
+import BooksCard from "./cards/books-card";
 
 export const GridCards = () => {
   return (
@@ -57,6 +58,7 @@ export const GridCards = () => {
 
             <ImagesCard />
           </div>
+          <BooksCard/>
         </div>
       </div>
     </div>
