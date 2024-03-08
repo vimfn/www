@@ -64,7 +64,7 @@ export const WakatimeStats = async () => {
           {/* <Code2 className="inline-block mr-1 -mt-[0.15rem]" size={18} /> */}
           {Math.round(seconds / 3600)}h
         </span>
-        <span className="text-sm">hacked this year so far</span>
+        <span className="text-sm">coding stats</span>
         <span className="text-[10px]">(wakatime)</span>
       </div>
     </a>

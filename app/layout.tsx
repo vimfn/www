@@ -7,6 +7,7 @@ import { Footer } from "@/components/layouts/footer";
 import Image from "next/image";
 import { Analytics } from "@/components/misc/analytics";
 import gradientImg from "@/public/images/gradient.webp";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,6 +78,7 @@ export default function RootLayout({ children }: ChildrenProps) {
               properly.
             </p>
           </noscript>
+          <Toaster />
         </ThemeProvider>
       </body>
       <Analytics />

@@ -3,7 +3,7 @@
 const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL as string;
 import { headers } from "next/headers";
 
-const IP = () => {
+const Identifier = () => {
   const FALLBACK_IP_ADDRESS = "0.0.0.0";
   const forwardedFor = headers().get("x-forwarded-for");
 
@@ -14,7 +14,7 @@ const IP = () => {
   return headers().get("x-real-ip") ?? FALLBACK_IP_ADDRESS;
 };
 
-export const submitForm = async (e: FormData) => {
+export const submitForm = async (email: string, message: string) => {
   await fetch(WEBHOOK_URL, {
     method: "POST",
     headers: {
@@ -22,7 +22,7 @@ export const submitForm = async (e: FormData) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      content: IP() + "\n" + e.get("email") + "\n" + e.get("message"),
+      content: Identifier() + "\n" + email + "\n" + message,
     }),
   });
 };
