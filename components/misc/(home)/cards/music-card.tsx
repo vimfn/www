@@ -57,6 +57,7 @@ export const MusicCard = () => {
         className={`absolute rounded-full -bottom-10 -left-14 overflow-hidden ${
           playing && "animate-slow-spin"
         }`}
+        placeholder="empty"
         width={200}
         height={200}
       />

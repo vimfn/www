@@ -1,8 +1,9 @@
 "use server";
 
-const WEBHOOK_URL = env.DISCORD_WEBHOOK_URL as string;
 import { env } from "@/app/env";
 import { headers } from "next/headers";
+
+const WEBHOOK_URL = env.DISCORD_WEBHOOK_URL as string;
 
 const Identifier = () => {
   const FALLBACK_IP_ADDRESS = "0.0.0.0";

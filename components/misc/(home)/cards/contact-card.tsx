@@ -50,7 +50,7 @@ const ContactCard = () => {
   }
 
   return (
-    <div className="mt-2 md:mt-0 w-full h-64 rounded-lg bg-[#f7f2f2] dark:bg-[#191919] px-2">
+    <div className="mt-3 md:mt-0 w-full h-64 rounded-lg bg-[#f7f2f2] dark:bg-[#191919] px-2">
       <Form {...form}>
         <p className="px-2 py-1 font-semibold text-md pt-2">Drop a message</p>
         <div className="mt-1">
