@@ -3,7 +3,7 @@ import books from "@/public/images/(home)/books.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const BooksCard = () => {
+export const BooksCard = () => {
   return (
     <Link href="/books">
       {" "}
@@ -23,5 +23,3 @@ const BooksCard = () => {
     </Link>
   );
 };
-
-export default BooksCard;

@@ -6,3 +6,7 @@ export * from "./locate-me";
 export * from "./wakatime-stats";
 export * from "./current-time";
 export * from "./stacks-card";
+export * from "./music-card"
+export * from "./links-card"
+export * from "./gh-link"
+export * from "./books-card"

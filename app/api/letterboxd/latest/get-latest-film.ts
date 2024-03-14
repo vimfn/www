@@ -7,121 +7,43 @@ const LETTERBOXD_FEED = `${LETTERBOXD_URL}/${LETTERBOXD_USERNAME}/rss/`;
 const LETTERBOXD_FILM_URL = (film: string) => `${LETTERBOXD_URL}/film/${film}/`;
 
 interface XMLParserDocument<T> {
-  /**
-   * A parsed RSS document.
-   */
   rss: T;
 }
 
 interface FilmEntry {
-  /**
-   * The film entry's description.
-   */
   description: string;
-
-  /**
-   * A unique identifer.
-   */
   guid: string;
-
-  /**
-   * The film's title.
-   */
   "letterboxd:filmTitle": string;
-
-  /**
-   * The year during which the film was released.
-   */
   "letterboxd:filmYear": number;
-
-  /**
-   * The film's rating.
-   */
   "letterboxd:memberRating": number;
-
-  /**
-   * Whether the film was already watched before.
-   */
   "letterboxd:rewatch": "No" | "Yes";
-
-  /**
-   * The date at which the film was watched.
-   */
   "letterboxd:watchedDate": string;
-
-  /**
-   * The film's Letterboxd URL.
-   */
   link: string;
-
-  /**
-   * The film entry's title.
-   */
   title: string;
 }
 
 interface LetterboxdResponse {
-  /**
-   * A parsed RSS feed.
-   */
   channel: {
-    /**
-     * The feed's description.
-     */
     description: string;
 
-    /**
-     * The feed's content.
-     */
     item: FilmEntry[];
 
-    /**
-     * The feed's URL.
-     */
     link: string;
 
-    /**
-     * The feed's title.
-     */
     title: string;
   };
 }
 
 export interface Response {
-  /**
-   * The date at which the song was listened to.
-   */
   date: string;
-
-  /**
-   * The film's poster.
-   */
   poster?: string;
 
-  /**
-   * The film's attributed rating.
-   */
   rating?: number;
-
-  /**
-   * The film's title.
-   */
   title: string;
-
-  /**
-   * The film's Letterboxd URL.
-   */
   url: string;
-
-  /**
-   * The film's release year.
-   */
   year: number;
 }
 
-/**
- * Fetch the latest film I watched from Letterboxd.
- */
 export async function getLatestFilm(): Promise<Response | undefined> {
   try {
     const response = await fetch(LETTERBOXD_FEED, {

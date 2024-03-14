@@ -1,6 +1,5 @@
 import { env } from "@/app/env";
 import { LogosVisualStudioCode } from "@/components/icons";
-import { Code2 } from "lucide-react";
 import { unstable_cache as cache } from "next/cache";
 
 type WakatimeRes = {

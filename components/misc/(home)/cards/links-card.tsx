@@ -1,21 +1,7 @@
 import { RiTwitterXFill } from "@/components/icons";
 import { CalendarDays, Linkedin } from "lucide-react";
 
-type LinksType = {
-  Icon: "LinkedIn" | "";
-  title: string;
-  href: URL;
-};
-
-const links: LinksType[] = [
-  {
-    title: "",
-    href: new URL("https://google.com"),
-    Icon: "",
-  },
-];
-
-const LinksCard = () => {
+export const LinksCard = () => {
   return (
     <div className="flex gap-2">
       <a
@@ -39,5 +25,3 @@ const LinksCard = () => {
     </div>
   );
 };
-
-export default LinksCard;

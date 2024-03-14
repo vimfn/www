@@ -2,7 +2,7 @@ import Image from "next/image";
 import img2 from "@/public/images/(home)/0002.jpg";
 import { Github } from "lucide-react";
 
-const GHLink = () => {
+export const GHLink = () => {
   return (
     <a
       className="relative h-full w-full group flex flex-col justify-between overflow-hidden rounded-2xl text-white transform-gpu transition-all duration-500 will-change-[outline,_transform] group-hover:scale-95 active:scale-100 hover:scale-95"
@@ -25,7 +25,7 @@ const GHLink = () => {
       </span>
       <span aria-hidden="true" className="px-6 pt-6">
         <span className="flex justify-between">
-            <Github/>
+          <Github />
         </span>
       </span>
       <span className="space-y-0.5 px-6 pb-6">
@@ -35,5 +35,3 @@ const GHLink = () => {
     </a>
   );
 };
-
-export default GHLink;
