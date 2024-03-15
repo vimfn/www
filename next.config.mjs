@@ -18,6 +18,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/support",
+        destination: "https://ko-fi.com/arnvgh",
+        permanent: true,
+      },
+      {
         source: "/gh",
         destination: "https://github.com/arnvgh",
         permanent: true,
