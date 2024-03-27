@@ -28,7 +28,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
           href="http://x.com/arnvgh"
           target="_blank"
         >
-          @arnvgh
+          @naindev
         </a>
         , also checkout{" "}
         <Link href="/stats" className="link dark:text-white">
@@ -51,7 +51,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
         </span>
         <a
           className="link ml-auto inline-flex items-center gap-1.5"
-          href="https://github.com/arnvgh/www"
+          href="https://github.com/NainDev/"
           rel="noreferrer"
           target="_blank"
         >
