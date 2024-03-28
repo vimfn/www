@@ -33,10 +33,9 @@ const aboutPage = () => {
               technologies, libraries, and frameworks. I learned about backend
               operations, databases, scalability, and real-time communications.
             </p>
-            <p>
-              Currently, I&apos;m engaged in the startup world, working with
-              cloud platforms, and doing freelancing on the side.
-            </p>
+            {/* <p>
+              Currently, ...
+            </p> */}
           </div>
         </section>
         <section className="flex flex-col md:flex-row gap-1 md:gap-9">

@@ -6,18 +6,28 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          I design, craft and publish products of quality and reliability,
-          specializing in scalable real-time systems & networking.
+          Currently a university freshman studying about computer algorithms
+          and machine learning, prior to this I've worked at some large-scale
+          startups.
         </p>
         <p>
-          A chess enthusiast and competitive programmer. I thrive in the Linux
-          and Vim ecosystem, embracing a terminal-centric lifestyle.{" "}
+          I enjoy maths, playing chess and participating in programming contests while
+          tweaking my linux and vim configs in free time and contributing to various open
+          source projects I care about.{" "}
+          <div className="pt-4"/>
           <Link
             href="/about"
             className="inline-flex link text-black relative dark:text-white/95"
           >
             about me{" "}
-            <ArrowUpRight size={15} className="mt-1 ml-[2px] items-center" />
+            <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
+          </Link>
+          <Link
+            href="/work"
+            className="ml-2 inline-flex link text-black relative dark:text-white/95"
+          >
+            work{" "}
+            <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
           </Link>
         </p>
       </div>

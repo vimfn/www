@@ -203,7 +203,7 @@ export const CodingTab = () => {
       <h1 className="text-2xl font-bold py-8">Coding</h1>
 
       <div className="pb-5">
-        I use Neovim for simple text edits or writing blogs, and VSCodium with
+        I use Neovim most of the time, and VSCodium with
         Vim Extension ({""}
         <a
           href="https://gist.github.com/arnvgh/32e28c0d699a6685017a5e2ba606e1ab"
@@ -213,7 +213,7 @@ export const CodingTab = () => {
         >
           Settings
         </a>
-        {""}) for web and most of my other projects, for python related stuff I
+        {""}) for web and some of my other projects, for python related stuff I
         use PyCharm cause of Pylance compalibitly issues with VSCodium.
       </div>
 
@@ -223,7 +223,7 @@ export const CodingTab = () => {
       </div>
       <div>
         <span className="font-medium dark:text-white">Theme: </span>
-        <span className="text-zinc-600 dark:text-zinc-400">Monokai Pro</span>
+        <span className="text-zinc-600 dark:text-zinc-400">Tokyo Night</span>
       </div>
     </div>
   );

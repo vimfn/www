@@ -43,7 +43,7 @@ export const faqs: FaqTypes[] = [
   {
     question: "Which university do you attend?",
     answer:
-      "Currently, I am not enrolled in any university. I plan to study computer science abroad next year, but I'm not comfortable sharing the name at the moment. Please refrain from asking personal questions. Thank you.",
+      "Please refrain from asking personal questions. Thank you.",
   },
   {
     question: "What are some of your favorite YouTube channels?",
