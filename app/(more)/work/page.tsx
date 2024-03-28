@@ -105,7 +105,7 @@ const workPage = () => {
             development and collaborative software engineering practices.
           </li>
       </ul>
-      <h2 className="text-xl font-bold pb-8">Projects</h2>
+      <h2 className="text-xl font-bold py-8">Projects</h2>
       <Table className="">
         <TableCaption>A list of my projects.</TableCaption>
         <TableHeader>
