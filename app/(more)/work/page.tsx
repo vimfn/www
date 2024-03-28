@@ -75,36 +75,35 @@ const workPage = () => {
       </ul>
       <h3 className="tetx-md font-semibold">{"Physicswallah Inc."}</h3>
       <ul className="list-disc p-3">
-        <li>
-          <strong>Implemented an app</strong> where teachers can solve student
-          doubts by selecting the exact slide number and lecture.
-        </li>
-        <li>
-          <strong>Integrated with internal API</strong> to fetch student doubts,
-          user login allowing teachers to view and address them.
-        </li>
-        <li>
-          <strong>Implemented multiple modes of doubt resolution</strong>,
-          including voice recording upload, picture upload, and text input.
-        </li>
-        <li>
-          <strong>Integrated with OpenAI API</strong> to provide teachers with
-          the ability to generate answers and edit them for optimal student
-          comprehension.
-        </li>
-        <li>
-          <strong>Ensured seamless functionality</strong> across various devices
-          and platforms by leveraging React Native's cross-platform
-          capabilities.
-        </li>
-        <li>
-          <strong>Collaborated with a team</strong> of developers and designers
-          to create an intuitive and efficient user experience.
-        </li>
-        <li>
-          <strong>Conducted testing</strong> and gathered feedback to iterate
-          and improve app features and performance.
-        </li>
+          <li>
+            <strong>Worked closely with a senior engineer</strong> to develop
+            key features of the app, including doubt resolution functionality.
+          </li>
+          <li>
+            <strong>Collaborated with the team</strong> in designing and
+            implementing various components and modules of the app.
+          </li>
+          <li>
+            <strong>Participated in integrating</strong> external APIs, such as
+            the OpenAI API, to enhance the app's functionality.
+          </li>
+          <li>
+            <strong>Assisted in testing and debugging</strong> to ensure the
+            app's reliability and performance.
+          </li>
+          <li>
+            <strong>Contributed to the creation</strong> of user-friendly
+            interfaces and experiences for teachers using React Native's
+            capabilities.
+          </li>
+          <li>
+            <strong>Engaged in discussions and brainstorming sessions</strong>{" "}
+            to explore new ideas and improve existing features.
+          </li>
+          <li>
+            <strong>Gained hands-on experience</strong> in mobile app
+            development and collaborative software engineering practices.
+          </li>
       </ul>
       <h2 className="text-xl font-bold pb-8">Projects</h2>
       <Table className="">
