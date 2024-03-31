@@ -21,7 +21,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
       )}
       {...props}
     >
-      <div className="italic  text-sm py-3 text-[#a1a1aa]">
+      {/* <div className="italic  text-sm py-3 text-[#a1a1aa]">
         PS: Made with {"<"}3 by{" "}
         <a
           className="link dark:text-white"
@@ -37,7 +37,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
         and click on
         <span className="dark:text-white"> more </span>
         in the nav for other stuff.
-      </div>
+      </div> */}
 
       <hr className="w-full border-t border-zinc-150 dark:border-zinc-800" />
       <div className="flex items-center pt-2">
