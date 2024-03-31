@@ -1,5 +1,7 @@
 const GITHUB = "https://github.com/arnvgh";
 
+// TODO: Add new projects and fix links, cleanup old projects and publish 🤷🏻
+
 export const workData = [
   {
     title: "www",
@@ -23,14 +25,13 @@ export const workData = [
   {
     title: "dots",
     year: "2022",
-    shortDesc: "My Arch DWM build (prev Hyprland)",
+    shortDesc: "Dotfiles for my arch [bspwm + hyprland] setup",
     link: `${GITHUB}/dots`,
   },
   {
     title: "animedoro",
     year: "2022",
-    shortDesc:
-      "A beautiful looking pomodoro timer app.",
+    shortDesc: "A beautiful looking pomodoro timer app.",
     link: `${GITHUB}/animedoro`,
   },
   {
@@ -43,9 +44,8 @@ export const workData = [
   {
     title: "sticker-shinobi",
     year: "2023",
-    shortDesc:
-      "A sticker selling ecommerce platform.",
-    link: "https://github.com/arnvgh/stickershinobi",
+    shortDesc: "A sticker selling ecommerce platform.",
+    link: "https://github.com/arnvgh/sticker-shinobi",
   },
   {
     title: "An AI Anime vTuber (whom you can talk to)",
@@ -58,21 +58,21 @@ export const workData = [
     title: "react-speech-to-text",
     year: "2023",
     shortDesc: "React speech to text example app.",
-    link: "",
+    link: "https://github.com/arnvgh/react-speech-to-text",
   },
   {
     title: "physicswallah-desktop",
     year: "2022",
     shortDesc:
       "An efficient, and lightweight desktop app implementation of the PhysicsWallah website with rust (tauri) and typecript.",
-    link: `${GITHUB}/PhysicsWallah-Desktop`,
+    link: `${GITHUB}/pw-desktop`,
   },
   {
     title: "Doubt Solvnig App at PhysicsWallah Inc.",
     year: "2023",
     shortDesc:
       "Built with React Native and integrated with the OpenAI API, this app allows educators to solve doubts posted by students via text, audio, or image. It also features AI-generated responses, with the option for editing and updating. The doubts are submitted by students through the PW website and app.",
-    link: "",
+    link: `${GITHUB}`,
   },
 
   {
@@ -80,19 +80,19 @@ export const workData = [
     year: "2021",
     shortDesc:
       "A lightweight unoffical client of the PhysicsWallah Website (popular eductional platform in India)",
-    link: "",
+    link: `${GITHUB}`,
   },
   {
     title: "Pizza Buzz",
     year: "2020",
     shortDesc: "A restaurant reservations site.",
-    link: "",
+    link: `${GITHUB}`,
   },
   {
     title: "rhytmis",
     year: "2020",
     shortDesc:
       "A simple yet powerful Music Bot (Used by server with 70k+ members) around the discord and lavalink wrapper to play, listen, search songs from YouTube directly in Discord Voice Channels.",
-    link: "",
+    link: `${GITHUB}`,
   },
 ];
