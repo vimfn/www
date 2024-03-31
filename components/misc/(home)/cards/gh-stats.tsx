@@ -52,7 +52,7 @@ const BackgroundPattern = () => {
     <div className="top-0 z-1 grid grid-cols-12 grid-rows-12 gap-1">
       {days.map((c, i) => (
         <div
-          key={c}
+          key={i}
           className="size-3 rounded-[0.2rem]"
           style={{ background: c }}
         />

@@ -52,7 +52,7 @@ export const workData = [
     year: "2023",
     shortDesc:
       "AI VTuber who can talk, transcibe reply and do face movements based on users input (voice).",
-    link: "",
+    link: `${GITHUB}`,
   },
   {
     title: "react-speech-to-text",
