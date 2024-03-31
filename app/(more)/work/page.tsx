@@ -48,6 +48,10 @@ const workPage = () => {
       <h3 className="tetx-md font-semibold">{"<Undisclosed>"}</h3>
       <ul className="list-disc p-3">
         <li>
+          <strong>Led the architecture design and implementation</strong>,
+          ensuring scalability and cost-effectiveness of the solution.
+        </li>
+        <li>
           <strong>Developed a video upload feature</strong> with signed URLs for
           secure direct uploads to Google Cloud Storage.
         </li>
@@ -61,13 +65,10 @@ const workPage = () => {
           retrieval and display in the web client.
         </li>
         <li>
-          <strong>Designed and deployed a Next.js web client</strong> hosted on
+          <strong>Deployed a Next.js web client</strong> hosted on
           Cloud Run for user interaction.
         </li>
-        <li>
-          <strong>Led the architecture design and implementation</strong>,
-          ensuring scalability and cost-effectiveness of the solution.
-        </li>
+
         <li>
           <strong>Collaborated with team members</strong> to address limitations
           and plan future enhancements.
@@ -75,35 +76,32 @@ const workPage = () => {
       </ul>
       <h3 className="tetx-md font-semibold">{"Physicswallah Inc."}</h3>
       <ul className="list-disc p-3">
-          <li>
-            <strong>Worked closely with a senior engineer</strong> to develop
-            key features of the app, including doubt resolution functionality.
-          </li>
-          <li>
-            <strong>Collaborated with the team</strong> in designing and
-            implementing various components and modules of the app.
-          </li>
-          <li>
-            <strong>Participated in integrating</strong> external APIs, such as
-            the OpenAI API, to enhance the app's functionality.
-          </li>
-          <li>
-            <strong>Assisted in testing and debugging</strong> to ensure the
-            app's reliability and performance.
-          </li>
-          <li>
-            <strong>Contributed to the creation</strong> of user-friendly
-            interfaces and experiences for teachers using React Native's
-            capabilities.
-          </li>
-          <li>
-            <strong>Engaged in discussions and brainstorming sessions</strong>{" "}
-            to explore new ideas and improve existing features.
-          </li>
-          <li>
-            <strong>Gained hands-on experience</strong> in mobile app
-            development and collaborative software engineering practices.
-          </li>
+        <li>
+          <strong>Implemented an app</strong> allowing teachers to solve student
+          doubts with features such as selecting slide numbers and lectures.
+        </li>
+        <li>
+          <strong>Integrated APIs</strong> to fetch student doubts and enhanced
+          functionality with OpenAI API for answer generation.
+        </li>
+        <li>
+          <strong>Developed multiple doubt resolution modes</strong> including
+          voice recording, picture upload, and text input.
+        </li>
+        <li>
+          <strong>Ensured seamless cross-platform functionality</strong> using
+          React Native's capabilities.
+        </li>
+        <li>
+          <strong>Collaborated with a senior engineer</strong> to develop key
+          features and <strong>worked closely with the team</strong> to design
+          and implement components.
+        </li>
+        <li>
+          <strong>Contributed to user-friendly interfaces</strong> and engaged
+          in discussions to improve features, conducting testing and gathering
+          feedback.
+        </li>
       </ul>
       <h2 className="text-xl font-bold py-8">Projects</h2>
       <Table className="">

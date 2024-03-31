@@ -6,14 +6,14 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          Currently a university freshman studying about computer algorithms and
-          machine learning, prior to this I've worked at some large-scale
+          I am currently a university freshman studying computer algorithms and
+          machine learning. Prior to this, I've worked at some large-scale
           startups.
         </p>
         <p>
-          I enjoy maths, playing chess and participating in programming contests
-          while tweaking my linux and vim configs in free time and contributing
-          to various open source projects I care about.
+          In my free time, I enjoy mathematics, playing chess, participating in
+          programming contests, tweaking my Linux and Vim configurations, and
+          contributing to various open-source projects I care about.
         </p>
         <div>
           <Link
