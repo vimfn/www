@@ -17,7 +17,7 @@ export const AlbumCard = ({ artist, name, coverImage, href }: Album) => {
         className=" rounded-md bg-cover absolute w-full h-full"
         style={{ backgroundImage: `url('${coverImage}')` }}
       ></div>
-      <div className="transition duration-300 ease-in-out opacity-0 hover:opacity-100 p-4 z-40 font-bold hover:bg-opacity-50 bg-black w-full h-full">
+      <div className="transition duration-300 ease-in-out opacity-0 hover:opacity-100 p-4 z-40 font-bold hover:bg-opacity-50 bg-black w-full h-full text-white overflow-y-hidden overflow-x-hidden">
         <h1 className="font-bold text-2xl capitalize">{artist}</h1>
         <p className="font-medium text-sm capitalize">{name}</p>
       </div>
