@@ -73,7 +73,7 @@ const workPage = () => {
           and plan future enhancements.
         </li>
       </ul>
-      <h3 className="tetx-md font-semibold">{"Physicswallah Inc."}</h3>
+      <h3 className="tetx-md font-semibold">{"Physicswallah"}</h3>
       <ul className="list-disc p-3">
         <li>
           <strong>Implemented an app</strong> allowing teachers to solve student
