@@ -6,15 +6,16 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          Currently a university freshman studying about computer algorithms
-          and machine learning, prior to this I've worked at some large-scale
+          Currently a university freshman studying about computer algorithms and
+          machine learning, prior to this I've worked at some large-scale
           startups.
         </p>
         <p>
-          I enjoy maths, playing chess and participating in programming contests while
-          tweaking my linux and vim configs in free time and contributing to various open
-          source projects I care about.{" "}
-          <div className="pt-4"/>
+          I enjoy maths, playing chess and participating in programming contests
+          while tweaking my linux and vim configs in free time and contributing
+          to various open source projects I care about.
+        </p>
+        <div>
           <Link
             href="/about"
             className="inline-flex link text-black relative dark:text-white/95"
@@ -29,7 +30,7 @@ export const Intro = () => {
             work{" "}
             <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
           </Link>
-        </p>
+        </div>
       </div>
       <svg
         aria-hidden="true"
