@@ -21,13 +21,15 @@ const workPage = () => {
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Work</h1>
         I love building side projects that solve either my own or someone
-        else&apos;s problems. Here is an extensive list of all the stuff I have
-        worked on over the years.
+        else&apos;s problems. Here is an extensive list (except for a few which
+        are private or work in progress) of all the stuff I have worked on over
+        the years.
         <br />
         <br />
         <p>
           As a student, I might not have the time for full-time projects, but
-          who knows 🤭?
+          who knows !?
+          <br />
           <br />
           Always happy to discuss an idea — hit me a up at
           <a
@@ -64,8 +66,8 @@ const workPage = () => {
           retrieval and display in the web client.
         </li>
         <li>
-          <strong>Deployed a Next.js web client</strong> hosted on
-          Cloud Run for user interaction.
+          <strong>Deployed a Next.js web client</strong> hosted on Cloud Run for
+          user interaction.
         </li>
 
         <li>
