@@ -26,11 +26,11 @@ export async function GET(req: NextRequest) {
       >
         <div
           style={{
-            marginLeft: 190,
-            marginRight: 190,
+            marginLeft: 100,
+            marginRight: 100,
             display: "flex",
             fontSize: 130,
-              fontFamily: "Kaisei Tokumin",
+            fontFamily: "Kaisei Tokumin",
             letterSpacing: "-0.05em",
             fontStyle: "normal",
             color: "white",
