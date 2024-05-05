@@ -16,7 +16,7 @@ export function capitalize(string: string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-export default async function fetcher<JSON = any>(
+export default async function fetcher<JSON>(
 	input: RequestInfo,
 	init?: RequestInit,
 ): Promise<JSON> {

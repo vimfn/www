@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const writingPage = () => {
-	let allBlogs = getBlogPosts();
+	const allBlogs = getBlogPosts();
 
 	return (
 		<section>
@@ -29,6 +29,7 @@ const writingPage = () => {
 						<a
 							href="https://x.com/arnvgh"
 							target="_blank"
+							rel="noopener noreferrer"
 							className="link mx-1"
 						>
 							Twitter
