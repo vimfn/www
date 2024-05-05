@@ -4,35 +4,35 @@ import RSS from "rss";
 import { env } from "@/app/env";
 
 export const GET = () => {
-  const SITE_URL =
-    env.NODE_ENV === "production"
-      ? "http://localhost:3000"
-      : "https://arnvgh.me";
+	const SITE_URL =
+		env.NODE_ENV === "production"
+			? "http://localhost:3000"
+			: "https://arnvgh.me";
 
-  const feed = new RSS({
-    title: "Writing @ arnvgh",
-    description: "Read my articles about tech, life and anything in between.",
-    site_url: `${SITE_URL}`,
-    feed_url: `${SITE_URL}/rss.xml`,
-    language: "en-US",
-    image_url: `${SITE_URL}/meta/og.png`,
-  });
+	const feed = new RSS({
+		title: "Writing @ arnvgh",
+		description: "Read my articles about tech, life and anything in between.",
+		site_url: `${SITE_URL}`,
+		feed_url: `${SITE_URL}/rss.xml`,
+		language: "en-US",
+		image_url: `${SITE_URL}/meta/og.png`,
+	});
 
-  const posts = getBlogPosts();
+	const posts = getBlogPosts();
 
-  for (const post of posts) {
-    feed.item({
-      title: post.metadata.title,
-      url: `${SITE_URL}/wiriting/${post.slug}`,
-      date: post.metadata.publishedAt,
-      description: post.content,
-      author: "Arunava",
-    });
-  }
+	for (const post of posts) {
+		feed.item({
+			title: post.metadata.title,
+			url: `${SITE_URL}/wiriting/${post.slug}`,
+			date: post.metadata.publishedAt,
+			description: post.content,
+			author: "Arunava",
+		});
+	}
 
-  return new NextResponse(feed.xml({ indent: true }), {
-    headers: {
-      "Content-Type": "application/xml",
-    },
-  });
+	return new NextResponse(feed.xml({ indent: true }), {
+		headers: {
+			"Content-Type": "application/xml",
+		},
+	});
 };

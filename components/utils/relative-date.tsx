@@ -6,19 +6,19 @@ import type { ComponentProps } from "react";
 import { useMemo } from "react";
 
 interface Props extends ComponentProps<"time"> {
-  date: Date | number | string;
+	date: Date | number | string;
 }
 
 export function RelativeDate({ date, ...props }: Props) {
-  const parsedDate = useMemo(() => new Date(date), [date]);
-  const normalizedDate = useMemo(() => parsedDate.toISOString(), [parsedDate]);
-  const formattedDate = useMemo(() => {
-    return `${capitalize(formatDistanceToNowStrict(parsedDate))} ago`;
-  }, [parsedDate]);
+	const parsedDate = useMemo(() => new Date(date), [date]);
+	const normalizedDate = useMemo(() => parsedDate.toISOString(), [parsedDate]);
+	const formattedDate = useMemo(() => {
+		return `${capitalize(formatDistanceToNowStrict(parsedDate))} ago`;
+	}, [parsedDate]);
 
-  return (
-    <time {...props} dateTime={normalizedDate}>
-      {formattedDate}
-    </time>
-  );
+	return (
+		<time {...props} dateTime={normalizedDate}>
+			{formattedDate}
+		</time>
+	);
 }
