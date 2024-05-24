@@ -36,5 +36,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# self
+#self 
 TODO.md

@@ -1,6 +1,6 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base", "schedule:weekly", "group:allNonMajor"],
-	"timezone": "Asia/Kolkata",
-	"ignoreDeps": ["sharp"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", "schedule:weekly", "group:allNonMajor"],
+  "timezone": "Asia/Kolkata",
+  "ignoreDeps": ["sharp"]
 }
