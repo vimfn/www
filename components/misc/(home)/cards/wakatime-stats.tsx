@@ -1,6 +1,5 @@
 import { env } from "@/app/env";
 import { LogosVisualStudioCode } from "@/components/icons";
-import { unstable_cache as cache } from "next/cache";
 
 type WakatimeRes = {
   data: {
@@ -23,29 +22,25 @@ type WakatimeRes = {
   };
 };
 
-const getCodingHrs = cache(
-  async () => {
-    const res = await fetch(
-      "https://wakatime.com/api/v1/users/current/all_time_since_today",
-      {
-        headers: {
-          Authorization: `Basic ${Buffer.from(env.WAKATIME_API_KEY).toString(
-            "base64"
-          )}`,
-        },
-      }
-    );
+const getCodingHrs = async () => {
+  const res = await fetch(
+    "https://wakatime.com/api/v1/users/current/all_time_since_today",
+    {
+      headers: {
+        Authorization: `Basic ${Buffer.from(env.WAKATIME_API_KEY).toString(
+          "base64"
+        )}`,
+      },
+      cache: 'no-store'
+    },
+  );
 
-    const data: WakatimeRes = await res.json();
-    return {
-      seconds: data.data.total_seconds,
-    };
-  },
-  [],
-  {
-    revalidate: 3600,
-  }
-);
+  const data: WakatimeRes = await res.json();
+
+  return {
+    seconds: data.data.total_seconds,
+  };
+}
 
 export const WakatimeStats = async () => {
   const { seconds } = await getCodingHrs();

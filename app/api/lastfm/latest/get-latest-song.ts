@@ -70,7 +70,9 @@ export interface Response {
 
 export async function getLatestSong(): Promise<Response | undefined> {
   try {
-    const response: LastFmResponse = await fetch(LASTFM_ENDPOINT).then(
+    const response: LastFmResponse = await fetch(LASTFM_ENDPOINT, {
+      cache: "no-store",
+    }).then(
       (response) => {
         if (!response.ok) {
           throw new Error("There was an error while querying the Last.fm API.");
