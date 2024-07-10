@@ -1,7 +1,6 @@
 {
   "name": "www",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
   "scripts": {
     "dev": "next dev -p 6969",
     "build": "next build",
