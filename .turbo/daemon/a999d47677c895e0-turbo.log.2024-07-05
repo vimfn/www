@@ -1,9 +1,0 @@
-2024-07-05T14:23:59.088278Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("4913"), AnchoredSystemPathBuf("tsconfig.json"), AnchoredSystemPathBuf("tsconfig.json~")}
-2024-07-05T14:23:59.088313Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
-2024-07-05T14:24:09.187907Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tsconfig.json")}
-2024-07-05T14:24:09.187921Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
-2024-07-05T14:25:15.087959Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("4913"), AnchoredSystemPathBuf("tsconfig.json"), AnchoredSystemPathBuf("tsconfig.json~")}
-2024-07-05T14:25:15.087978Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
-2024-07-05T14:25:22.387858Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tsconfig.json")}
-2024-07-05T14:25:22.387869Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
-2024-07-05T16:58:29.348412Z  WARN turborepo_filewatch: encountered error watching filesystem enumerating recursive watch: IO error for operation on /home/ag/code/www/.git/.gitstatus.iNbHiC/a/1: No such file or directory (os error 2)
