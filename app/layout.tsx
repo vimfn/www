@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const info = {
   name: "Arunava Ghosh",
-  twitter: "@vimfnn",
+  twitter: "@vimfnx",
   description: "19yo Software Engineer, India",
   url: "https://vimfn.in",
   image: "/meta/meta.png",

@@ -15,7 +15,7 @@ export const LinksCard = () => {
         </p>
       </a>
       <a
-        href="http://x.com/vimfnn"
+        href="http://x.com/vimfnx"
         target="_blank"
         className="hover:scale-95 duration-500 transform-gpu h-[4.125rem] flex flex-col justify-center items-center rounded-lg text-white bg-[#1c1d1f] w-full"
       >

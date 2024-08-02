@@ -27,7 +27,7 @@ const notesPage = () => {
             </a>{" "}
             or follow on
             <a
-              href="https://x.com/vimfnn"
+              href="https://x.com/vimfnx"
               target="_blank"
               className="link mx-1"
             >

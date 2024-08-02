@@ -23,7 +23,7 @@ const pinsPage = () => {
           of us. If you have any other inquiries, feel free to reach out to me
           at{" "}
           <a
-            href="http://x.com/vimfnn"
+            href="http://x.com/vimfnx"
             target="_blank"
             rel="noopener noreferrer"
             className="link"

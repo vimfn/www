@@ -54,7 +54,7 @@ export const Intro = () => {
         feel free to reach me out at
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-          href="http://x.com/vimfnn"
+          href="http://x.com/vimfnx"
           target="_blank"
           rel="noopener noreferrer"
         >

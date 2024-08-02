@@ -135,7 +135,7 @@ const NavDrawer = () => {
           </Button>
           <Button variant="secondary">
             <a
-              href="http://x.com/vimfnn"
+              href="http://x.com/vimfnx"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
