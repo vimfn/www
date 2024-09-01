@@ -4,7 +4,7 @@ import { env } from "@/app/env";
 import { getAlbumCover } from "./get-album-cover";
 
 const LASTFM_API = "https://ws.audioscrobbler.com/2.0";
-const LASTFM_USERNAME = "arnvgh";
+const LASTFM_USERNAME = "vimfn";
 const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`;
 
 type Boolean = "0" | "1";
@@ -86,7 +86,7 @@ export async function getLatestSong(): Promise<Response | undefined> {
     const date = song.date?.uts ? Number(song.date?.uts) : undefined;
     let year: number | undefined;
 
-    return {
+    let data = {
       title: song.name,
       artist: song.artist["#text"],
       year,
@@ -98,7 +98,8 @@ export async function getLatestSong(): Promise<Response | undefined> {
         )
       ).coverArt.url as string,
       playing: Boolean(song["@attr"]?.nowplaying) ?? !date,
-    };
+    }
+    return data;
   } catch (error) {
     console.error(error);
     return;

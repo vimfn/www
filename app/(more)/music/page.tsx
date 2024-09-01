@@ -17,10 +17,10 @@ const MusicPage = () => {
           happy day or a sad one, there is a memory linked with it, and a song
           that accompanies the moment.
         </p>
-        <p>
+        { /* <p>
           You can find a screencast my 2023 Spotify wrapped{""}
           <a
-            href="https://files.arnvgh.me/r/2023_Spotify_Wrapped.mkv"
+            href="https://files.vimfn.in/r/2023_Spotify_Wrapped.mkv"
             className="link ml-1"
             rel="noopener noreferrer"
           >
@@ -28,6 +28,7 @@ const MusicPage = () => {
           </a>
           {""}.
         </p>
+        */ }
       </div>
       <LatestSong className="min-w-0 max-w-full" />
       <h1 className="text-2xl font-bold py-8">Fav Tracks</h1>

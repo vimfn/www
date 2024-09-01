@@ -97,7 +97,6 @@ export async function getLatestFilm(): Promise<Response | undefined> {
     };
   } catch (error) {
     console.error(error);
-
     return;
   }
 }

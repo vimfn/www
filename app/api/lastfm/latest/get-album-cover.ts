@@ -34,11 +34,10 @@ export const getAlbumCover = async (track: string) => {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
-  }).then(async (res) => {
-    return res.json();
-  });
+  })
+  const data = await res.json()
 
-  const { name, album, external_urls, preview_url } = await res.tracks.items[0];
+  const { name, album, external_urls, preview_url } = data.tracks.items[0];
 
   return {
     name,
