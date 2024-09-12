@@ -1,5 +1,6 @@
 import { env } from "@/app/env";
 import { LogosVisualStudioCode } from "@/components/icons";
+import { Code2 } from "lucide-react";
 
 type WakatimeRes = {
   data: {
@@ -23,8 +24,6 @@ type WakatimeRes = {
 };
 
 const getCodingHrs = async () => {
-  try {
-
     const res = await fetch(
       "https://wakatime.com/api/v1/users/current/all_time_since_today",
       {
@@ -40,20 +39,13 @@ const getCodingHrs = async () => {
     }
     const data: WakatimeRes = await res.json();
 
-    console.log(data)
-
     return {
       seconds: data.data.total_seconds,
     }
   }
-  catch (error) {
-    console.error('Fetch failed: ', error);
-    throw error; // rethrow the error after logging it
-  }
-}
 
 export const WakatimeStats = async () => {
-  // const { seconds } = await getCodingHrs();
+  const { seconds } = await getCodingHrs();
 
   return (
     <a
@@ -65,9 +57,8 @@ export const WakatimeStats = async () => {
       <div className="h-[4.125rem] relative flex flex-col justify-center overflow-hidden items-center rounded-lg dark:text-white">
         <LogosVisualStudioCode className="absolute blur-sm text-[60px] top-0 left-0 -rotate-45 brightness-50" />
         <span className="font-semibold items-center font-mono text-3xl -rotate-2">
-          {/* <Code2 className="inline-block mr-1 -mt-[0.15rem]" size={18} /> */}
-          {/* {Math.round(seconds / 3600)}h */}
-          865hr
+          <Code2 className="inline-block mr-1 -mt-[0.15rem]" size={18} />
+          {Math.round(seconds / 3600)}h
         </span>
         <span className="text-sm">coding stats</span>
         <span className="text-[10px]">(wakatime)</span>

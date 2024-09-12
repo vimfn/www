@@ -66,5 +66,5 @@ export const getGHStats = cache(
     };
   },
   [],
-  { revalidate: 86400 }
+  { revalidate: 3600 } // revalidates 1hr
 );

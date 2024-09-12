@@ -13,8 +13,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/(github|gh|git)",
-        destination: "https://github.com/vimfn",
+        source: "/(gh|github|git)/:slug*",
+        destination: "https://github.com/vimfn/:slug*",
         permanent: true,
       },
       {
@@ -23,38 +23,22 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/(gh|github|git)/:slug*",
-        destination: "https://github.com/vimfn/:slug*",
-        permanent: true,
-      },
-      {
         source: "/(twitter|x)",
         destination: "https://twitter.com/vimfnx",
         permanent: true,
       },
       {
-        source: "/linkedin",
+        source: "/(linkedin|ln)",
         destination: "https://www.linkedin.com/in/vimfn/",
         permanent: true,
       },
       {
-        source: "/devden",
-        // invite only for now :(
-        destination: "https://discord.gg/N5Ce5uDvQZ",
-        permanent: true,
-      },
-      {
-        source: "/spotify",
+        source: "/(spotify|sp)",
         destination: "https://open.spotify.com/user/zfu9cur8fpnw6oc4q8vm55op6",
         permanent: true,
       },
       {
-        source: "/blog",
-        destination: "https://vimfn.in/writing",
-        permanent: true,
-      },
-      {
-        source: "/blog/:slug*",
+        source: "/(blog|notes|writing|n)/:slug*",
         destination: "https://vimfn.in/writing/:slug*",
         permanent: true,
       },

@@ -39,7 +39,7 @@ const ContactCard = () => {
       description: "Thanks, I'll get back to you ASAP.",
       action: {
         label: "Undo",
-        //TODO: Implement undo function.
+        // TOOD: Undo Functionality
         onClick: () => console.log("implement undo function"),
       },
     });

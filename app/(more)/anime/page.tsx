@@ -1,6 +1,5 @@
 import { AnimeCard } from "@/components/misc/(anime)/anime-card";
 import { Anime, AnimeData } from "./anime";
-import { LatestFilm } from "@/components/misc/(anime)/latest-film";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,8 +18,6 @@ const animePage = () => {
           a friend. Since then, I have watched many anime of different genres,
           but Isekai, Mecha, and Slice of Life are some of my favorites.
         </p>
-        <LatestFilm className="min-w-0 max-w-full" />
-        <p className="pt-5">Below are some of my all-time favorite anime.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
         {AnimeData.map((anime: Anime) => (

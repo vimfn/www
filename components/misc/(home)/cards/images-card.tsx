@@ -21,13 +21,9 @@ export const ImagesCard = () => {
   return (
     <Link
       className="w-full h-36 hover:scale-95 transform-gpu duration-500 transition-all rounded-xl bg-gradient-to-r p-1 from-[#d0bfea] to-[#c7bcfb]  dark:from-[#342848] dark:to-[#6859aa]"
-      href={`/writing/${allBlogs[0].slug}`}
+      href={`/notes/${allBlogs[0].slug}`}
     >
       <div className="relative  overflow-hidden flex flex-col justify-between h-full rounded-lg bg-[#f7f2f2] dark:bg-[#191919]">
-        {/* <PenTool
-          className="absolute -right-4 -bottom-8 text-[#323232]"
-          size={100}
-        /> */}
         <div className="flex flex-col justify-between">
           <div className="px-4 py-2">
             <p className="text-xl font-semibold mb-3">Latest Post</p>

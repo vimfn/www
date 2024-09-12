@@ -91,10 +91,10 @@ const workPage = () => {
 
       <h2 className="text-xl font-bold py-8">Projects</h2>
 
-      <div className="">TODO: write about my projects here, meanwhile you can checkout my {" "}
-        <a href="http://github.com/vimfn/" className="link">
+      <div className="">todo: write about my projects here, meanwhile you can checkout my {" "}
+        <a href="/gh" className="link">
           github
-        </a>.
+        </a> / <a href="/ln" target="_blank" className="link" rel="noopener noreferrer">linkedin</a>.
       </div>
       {/* 
       <Table>

@@ -1,5 +1,3 @@
-// this is a workaround to get track cover from spotify if lastfm fails to get the image
-
 import { env } from "@/app/env";
 
 const ENDPOINT = "https://api.spotify.com/v1/search?q=";

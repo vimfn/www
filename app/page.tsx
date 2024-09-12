@@ -12,8 +12,8 @@ const Home = () => {
         19yo Software Developer, IN/Remote
       </div>
       <Intro />
-      <GridCards/>
-      <ContactCard/>
+      <GridCards />
+      <ContactCard />
     </section>
   );
 };
