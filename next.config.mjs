@@ -38,11 +38,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/(blog|notes|writing|n)/:slug*",
-        destination: "https://vimfn.in/writing/:slug*",
-        permanent: true,
-      },
-      {
         source: "/feed.xml",
         destination: "https://vimfn.in/rss.xml",
         permanent: true,
