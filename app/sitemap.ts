@@ -2,7 +2,7 @@ import { getBlogPosts } from "@/lib/blog";
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
-    url: `https://vimfn.in/writing/${post.slug}`,
+    url: `https://beta.vimfn.in/writing/${post.slug}`,
     lastModified: post.metadata.publishedAt,
   }));
 
@@ -18,7 +18,7 @@ export default async function sitemap() {
     "/nsfw",
     "/faqs",
   ].map((route) => ({
-    url: `https://vimfn.in${route}`,
+    url: `https://beta.vimfn.in${route}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
 

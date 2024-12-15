@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.scdn.co",
+        hostname: "lastfm.freetls.fastly.net",
         port: "",
         pathname: "/**",
       },
@@ -39,17 +39,17 @@ const nextConfig = {
       },
       {
         source: "/feed.xml",
-        destination: "https://vimfn.in/rss.xml",
+        destination: "https://beta.vimfn.in/rss.xml",
         permanent: true,
       },
       {
         source: "/feed",
-        destination: "https://vimfn.in/rss.xml",
+        destination: "https://beta.vimfn.in/rss.xml",
         permanent: true,
       },
       {
         source: "/rss",
-        destination: "https://vimfn.in/rss.xml",
+        destination: "https://beta.vimfn.in/rss.xml",
         permanent: true,
       },
       {

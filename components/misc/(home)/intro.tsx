@@ -6,19 +6,13 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          hi, i am currently a university freshman mostly studying about
-          computer algorithms, my interests include neural networks, computer
-          graphics and ctfs.
+          hi, i am arunava (a.k.a vimfn on the internet) currently a cs undergrad at [redacted], my interests include neural networks, computer graphics and ctfs.
         </p>
         <p>
-          beyond my studies, i enjoy mathematics, playing chess, participating
-          in hackathons, and working on various side projects (i've got plenty
-          of them :p). In my free time, I also like watching anime and tweaking
-          my linux and (n)vim configurations.
+          beyond my studies, i enjoy playing chess, participating in hackathons, and working on various side projects, in my free time, i also like listening to music and tinkering with things to understand how they work.
         </p>
         <p>
-          p.s. I am a big fan of typescript, rust, and python and almost always
-          learning something new about them.
+          ps i love simplicity and a great admirer of unix philosophy, minimalism and hacker ethics.
         </p>
         <div>
           <Link
@@ -63,7 +57,7 @@ export const Intro = () => {
         or drop an
         <a
           className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="mailto:vimfn@proton.me"
+          href="mailto:hi@vimfn.in"
         >
           email
         </a>

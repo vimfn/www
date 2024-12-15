@@ -21,8 +21,8 @@ export async function generateMetadata({
     image,
   } = post.metadata;
   let ogImage = image
-    ? `https://vimfn.in/${image}`
-    : `https://vimfn.in/api/og?title=${title}`;
+    ? `https://beta.vimfn.in/${image}`
+    : `https://beta.vimfn.in/api/og?title=${title}`;
 
   return {
     title,
@@ -32,7 +32,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://vimfn.in/notes/${post.slug}`,
+      url: `https://beta.vimfn.in/notes/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -73,9 +73,9 @@ export default function Blog({
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://vimfn.in${post.metadata.image}`
-              : `https://vimfn.in/api/og?title=${post.metadata.title}`,
-            url: `https://vimfn.in/writing/${post.slug}`,
+              ? `https://beta.vimfn.in${post.metadata.image}`
+              : `https://beta.vimfn.in/api/og?title=${post.metadata.title}`,
+            url: `https://beta.vimfn.in/writing/${post.slug}`,
             author: {
               "@type": "Person",
               name: "Arunava Ghosh",

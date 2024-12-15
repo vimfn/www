@@ -7,7 +7,7 @@ export const GET = () => {
   const SITE_URL =
     env.NODE_ENV === "production"
       ? "http://localhost:3000"
-      : "https://vimfn.in";
+      : "https://beta.vimfn.in";
 
   const feed = new RSS({
     title: "notes // vimfn",

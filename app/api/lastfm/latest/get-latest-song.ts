@@ -4,7 +4,7 @@ import { env } from "@/app/env";
 import { getAlbumCover } from "./get-album-cover";
 
 const LASTFM_API = "https://ws.audioscrobbler.com/2.0";
-const LASTFM_USERNAME = "vimfn";
+const LASTFM_USERNAME = "vimfnx";
 const LASTFM_ENDPOINT = `${LASTFM_API}?method=user.getRecentTracks&api_key=${env.LASTFM_API_TOKEN}&format=json&user=${LASTFM_USERNAME}&limit=1`;
 
 type Boolean = "0" | "1";
@@ -84,6 +84,8 @@ export async function getLatestSong(): Promise<Response | undefined> {
 
     const song = response.recenttracks?.track?.[0];
     const date = song.date?.uts ? Number(song.date?.uts) : undefined;
+    const cover = song.image[3]["#text"] ? song.image[3]["#text"] : undefined;
+
     let year: number | undefined;
 
     let data = {
@@ -92,11 +94,7 @@ export async function getLatestSong(): Promise<Response | undefined> {
       year,
       date,
       url: song.url,
-      cover: (
-        await getAlbumCover(
-          `track: ${song.name} artist: ${song.artist["#text"]}`
-        )
-      ).coverArt.url as string,
+      cover: cover as string,
       playing: Boolean(song["@attr"]?.nowplaying) ?? !date,
     }
     return data;

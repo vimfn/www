@@ -29,6 +29,30 @@ const workPage = () => {
 
       <h2 className="text-xl font-bold pb-8">Experience</h2>
 
+      <h3 className="text-md font-semibold">Google Developers Group</h3>
+      <p className="text-sm">Dec'24 - Present · On-Campus Core Team Member</p>
+      <ul className="list-disc p-3">
+        <li>
+          Developed full-stack solutions using React (Next.js) and Svelte (SvelteKit) for dynamic UIs.
+        </li>
+        <li>
+          Built RESTful APIs and microservices with Node.js and Go, integrated with MongoDB, MySQL, and PostgreSQL.
+        </li>
+        <li>
+          Optimized database schemas, queries, and API performance for scalability and reliability.
+        </li>
+        <li>
+          Ensured seamless front-end and back-end data integration through RESTful and GraphQL APIs.
+        </li>
+        <li>
+          Implemented best practices in code quality, testing, and CI/CD pipelines.
+        </li>
+        <li>
+          Collaborated on system architecture and tech stack decisions to streamline development processes.
+        </li>
+      </ul>
+
+
       <h3 className="tetx-md font-semibold">{"<Undisclosed>"}</h3>
       <p className="text-sm">Jan'24 Remote - Freelance</p>
       <ul className="list-disc p-3">

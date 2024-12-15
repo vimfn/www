@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "center",
-          backgroundImage: "url(https://vimfn.in/meta/og.png)",
+          backgroundImage: "url(https://beta.vimfn.in/meta/og.png)",
         }}
       >
         <div

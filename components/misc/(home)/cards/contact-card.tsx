@@ -39,7 +39,7 @@ const ContactCard = () => {
       description: "Thanks, I'll get back to you ASAP.",
       action: {
         label: "Undo",
-        // TOOD: Undo Functionality
+        // TODO: Undo Functionality
         onClick: () => console.log("implement undo function"),
       },
     });
@@ -68,7 +68,7 @@ const ContactCard = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="arnvgh@gmail.com" {...field} />
+                    <Input placeholder="hi@vimfn.in" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -82,8 +82,8 @@ const ContactCard = () => {
                   <FormItem>
                     <FormControl>
                       <Textarea
-                        placeholder="Hey, wassup ?"
-                        className="h-28 w-full" // Add w-full class here
+                        placeholder="your message here"
+                        className="h-28 w-full"
                         {...field}
                       />
                     </FormControl>

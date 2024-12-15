@@ -9,7 +9,7 @@ const Home = () => {
         Arunava Ghosh
       </h1>
       <div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">
-        19yo Software Developer, IN/Remote
+        19yo Software Engineer, IN/Remote
       </div>
       <Intro />
       <GridCards />
