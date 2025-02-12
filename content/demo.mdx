@@ -1,0 +1,81 @@
+---
+title: markdown syntax
+publishedAt: "2025-01-01"
+summary: "summary goes here.."
+---
+
+## binary search
+
+```rs
+use std::cmp::Ordering;
+
+fn binary_search<T: Ord>(arr: &[T], desired: &T) -> Option<usize> {
+    let mut low = 0;
+    let mut high = arr.len() - 1;
+
+    while low <= high {
+        let mid = (low + high) / 2;
+
+        match arr[mid].cmp(key) {
+            Ordering::Less => low = mid + 1,
+            Ordering::Greater => high = mid - 1,
+            Ordering::Equal => return Some(mid),
+        }
+    }
+    None
+}
+```
+
+<br/>
+
+# h1
+## h2
+### h3
+
+<br/>
+
+<Callout emoji="♨️">
+ Additionally, all opinions are mine, and they **can change as I gain more experience and learn new things**. This post is **not** some sort of advice or guide but just a reflection.
+
+</Callout>
+
+## emphasis
+
+*this text will be italic*  
+_this will also be italic_
+
+**this text will be bold**  
+__this will also be bold__
+
+_you **can** combine them_
+
+## lists
+
+### unordered
+
+* item 1
+* item 2
+* item 2a
+* item 2b
+    * item 3a
+    * item 3b
+
+### ordered
+
+1. item 1
+2. item 2
+3. item 3
+    1. item 3a
+    2. item 3b
+
+## links
+
+find the source here [github/vimfn/www](https://github.com/vimfn/www)
+
+
+## blockquotes
+
+> markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by john gruber with aaron swartz.
+>
+>> markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+
